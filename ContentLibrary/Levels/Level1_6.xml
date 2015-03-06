@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="XMLContent.Level">
+    <levelNum>1</levelNum>
+    <seamstress>
+      <position>15 -10</position>
+    </seamstress>
+    <ground>
+      <!-- left boundary -->
+      <Item>
+        <position>0 -60</position>
+        <dimensions>8 500</dimensions>
+      </Item>
+      <Item>
+        <position>0 -8</position>
+        <dimensions>100 5</dimensions>
+      </Item>
+      <!-- first blockade -->
+      <Item>
+        <position>0 -9</position>
+        <dimensions>19 1</dimensions>
+      </Item>
+      <Item>
+        <position>22 -9</position>
+        <dimensions>2 1</dimensions>
+      </Item>
+      <!-- second blockade -->
+      <Item>
+        <position>27 -10</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <!-- platforms -->
+      <Item>
+        <position>29 -15</position>
+        <dimensions>4 1</dimensions>
+      </Item>
+      <Item>
+        <position>26 -16</position>
+        <dimensions>2 1</dimensions>
+      </Item>
+      <!-- final platforms -->
+      <Item>
+        <position>37 -19</position>
+        <dimensions>4 1</dimensions>
+      </Item>
+      <Item>
+        <position>39 -20</position>
+        <dimensions>2 1</dimensions>
+      </Item>
+      <!-- right boundary -->
+      <Item>
+        <position>41 -30</position>
+        <dimensions>10 50</dimensions>
+      </Item>
+      <Item>
+        <position>36 -15</position>
+        <dimensions>8 10</dimensions>
+      </Item>
+      <Item>
+        <position>35 -12</position>
+        <dimensions>1 3</dimensions>
+      </Item>
+    </ground>
+    <miasma></miasma>
+    <gameGrid>75 -20</gameGrid>
+    <ribbons>
+      <Item>
+        <path>
+          12 -9
+          35 -9
+          35 -17
+          29 -17
+        </path>
+        <start>2</start>
+        <end>12</end>
+        <loop>false</loop>
+        <color>0</color>
+      </Item>
+    </ribbons>
+    <cameras></cameras>
+    <ribbonBoxes>
+      <Item>
+        <ribbonID>0</ribbonID>
+        <position>7</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+        <flipped>true</flipped>
+      </Item>
+    </ribbonBoxes>
+    <shooters></shooters>
+    <needles></needles>
+    <hooks></hooks>
+    <telescopingBlocks></telescopingBlocks>
+    <flipbars></flipbars>
+    <rotatingPlatforms></rotatingPlatforms>
+    <saveRocks>
+      <Item>
+        <position> 40 -20.5</position>
+        <endFlag>true</endFlag>
+      </Item>      
+    </saveRocks>
+    <decorations>
+      <!--
+      <Item>
+        <image>Paintings/painting_ribbonflip</image>
+        <position>19 -13</position>
+        <dimensions>6 4</dimensions>
+        <rotation>0</rotation>
+      </Item
+      -->
+    </decorations>
+    <collectables>
+        <Item>
+          <position>20 -8.7</position>
+          <id>0</id>
+        </Item>
+        <Item>
+          <position>24 -19</position>
+          <id>1</id>
+        </Item>
+        <Item>
+          <position>39 -17</position>
+          <id>2</id>
+        </Item>
+    </collectables>
+    <gems></gems>
+  </Asset>
+</XnaContent>

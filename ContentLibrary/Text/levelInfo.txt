@@ -1,0 +1,2 @@
+levels.numTutorialLevels = 12
+levels.numStandardLevels = 14

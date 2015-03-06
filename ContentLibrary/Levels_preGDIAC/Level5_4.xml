@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<XnaContent>
+  <Asset Type="XMLContent.Level">
+    <levelNum>3</levelNum>
+    <seamstress>
+      <position>10.5 -5.5</position>
+    </seamstress>
+    <ground>
+      <Item>
+        <position>20 -10</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>20 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>20 -12</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>20 -13</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>20 -14</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>21 -10</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>21 -14</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>22 -10</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>22 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>22 -12</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>22 -14</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>23 -10</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>23 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>23 -12</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>23 -14</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>24 -10</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>24 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>24 -12</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>24 -13</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>24 -14</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>25 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>25 -12</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>25 -13</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>26 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>26 -12</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>27 -12</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>28 -12</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>29 -12</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>30 -12</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+    </ground>
+    <miasma>
+      <Item>
+        <position>21 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>21 -12</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>21 -13</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>22 -13</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>23 -13</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+    </miasma>
+    <gameGrid>45 -21</gameGrid>
+    <ribbons>
+      <Item>
+        <path>8 -2
+14 -2
+14 -7
+20 -7
+20 -2
+25 -2
+25 -5
+29 -5
+29 -2
+31 -2
+31 -9
+38 -9
+38 -2
+41 -2
+</path>
+        <start>0</start>
+        <end>13</end>
+        <loop>false</loop>
+        <color>0</color>
+      </Item>
+      <Item>
+        <path>41 -3
+43 -3
+43 -11
+35 -11
+35 -10
+32 -10
+</path>
+        <start>0</start>
+        <end>5</end>
+        <loop>false</loop>
+        <color>2</color>
+      </Item>
+    </ribbons>
+    <cameras />
+    <ribbonBoxes>
+      <Item>
+        <ribbonID>0</ribbonID>
+        <position>0</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+        <flipped>false</flipped>
+      </Item>
+      <Item>
+        <ribbonID>0</ribbonID>
+        <position>12</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+        <flipped>false</flipped>
+      </Item>
+      <Item>
+        <ribbonID>1</ribbonID>
+        <position>1</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+        <flipped>false</flipped>
+      </Item>
+    </ribbonBoxes>
+    <shooters />
+    <needles />
+    <hooks />
+    <telescopingBlocks />
+    <flipbars />
+    <rotatingPlatforms />
+    <saveRocks />
+    <decorations />
+    <collectables />
+    <gems />
+  </Asset>
+</XnaContent>

@@ -1,0 +1,42 @@
+\act
+0
+
+\new
+Prince Beau
+beauspeech1
+There's a hole in my bucket.
+
+\new
+Seamstress
+seamspeech1
+Then patch it, dear Beau.
+
+\new
+Prince Beau
+beauspeech1
+With what shall I patch it, dear Seamstress.
+
+\new
+Seamstress
+seamspeech1
+With straw, Beau, with straw.
+
+\new
+Prince Beau
+beauspeech1
+But how shall I cut it, dear Seamstress?
+
+\new
+Seamstress
+seamspeech1
+With a knife, dear Beau, with a knife.
+
+\new
+Prince Beau
+beauspeech1
+But my knife is too dull, dear Seamstress.
+
+\new
+Walker White
+whitespeech
+At showcase everyone is gonna get up at this point and go play Black Friday.

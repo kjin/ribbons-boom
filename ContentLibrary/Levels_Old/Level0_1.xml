@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="XMLContent.Level">
+    <levelNum>1</levelNum>
+    <gameGrid>30 20</gameGrid>
+    <ribbons>
+      <Item>
+          <path>
+            0 10
+            20 10
+            20 0
+            0 0
+          </path>
+        <start>0</start>
+        <end>10</end>
+      </Item>
+    </ribbons>
+    <ribbonObjects>
+      <Item>
+        <type>box</type>
+        <position>5</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+    </ribbonObjects>
+    <environmentObjects>
+      <Item>
+        <type>save</type>
+        <position>19 1</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+    </environmentObjects>
+    <seamstress>
+      <position>1 9</position>
+    </seamstress>
+    <exit>
+      <position>20 1</position>
+    </exit>
+  </Asset>
+</XnaContent>

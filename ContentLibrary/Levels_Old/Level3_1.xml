@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="XMLContent.Level">
+    <levelNum>0</levelNum>
+    <seamstress>
+      <position>0 -5</position>
+    </seamstress>
+    <ground>
+      <Item>
+       <position>-5 0</position>
+       <dimensions>50 10</dimensions>
+      </Item>
+    </ground>
+    <miasma></miasma>
+    <gameGrid>52 -10</gameGrid>
+    <ribbons>
+      <Item>
+        <path>
+          -1 -3
+          4 -3
+          4 -7
+          -1 -7
+        </path>
+        <start>0</start>
+        <end>5</end>
+        <loop>true</loop>
+        <color>0</color>
+      </Item>
+    </ribbons>
+    <cameras></cameras>
+    <ribbonBoxes></ribbonBoxes>
+    <shooters></shooters>
+    <needles>
+      <Item>
+       <dimensions>4 1</dimensions>
+       <ribbonID>0</ribbonID>
+       <position>0 0.5</position>
+       <amplitude>1</amplitude>
+       <frequency>0.5</frequency>
+       <rotation>0</rotation>
+      </Item>
+    </needles>
+    <hooks></hooks>
+    <telescopingBlocks>
+    </telescopingBlocks>
+    <flipbars>
+      <Item>
+        <ribbonID>0</ribbonID>
+        <ribbonPosition>3</ribbonPosition>
+      </Item>
+    </flipbars>
+    <rotatingPlatforms>
+      <Item>
+        <ribbonID>-1</ribbonID>
+        <dimensions>2 1</dimensions>
+        <position>1 -6</position>
+        <pivot>1 0</pivot>
+        <rotationSpeed>0.1</rotationSpeed>
+        <initialRotation>0</initialRotation>
+      </Item>
+    </rotatingPlatforms>
+    <saveRocks>
+      <Item>
+        <position> 51.5 -10.5 </position>
+        <endFlag>true</endFlag>
+      </Item>      
+    </saveRocks>
+    <decorations></decorations>
+    <collectables></collectables>
+    <gems></gems>
+  </Asset>
+</XnaContent>

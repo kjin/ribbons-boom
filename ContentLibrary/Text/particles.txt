@@ -1,0 +1,25 @@
+act0.numParticles = 40
+act0.rotationRateRange = (0, 0)
+act0.scaleRange = (0.15, 0.5)
+act0.colorLow = (1, 1, 0.5, 0.2)
+act0.colorHigh = (1, 0.8, 0.5, 1)
+act0.texture = act1_particle
+act0.dist = 20
+
+act1.numParticles = 40
+act1.rotationRateRange = (0, 0)
+act1.scaleRange = (0.25, 1)
+act1.colorLow = (1, 1, 0.5, 0.2)
+act1.colorHigh = (1, 0.8, 0.5, 1)
+act1.texture = act1_particle
+act1.dist = 2
+
+act2.numParticles = 60
+act2.rotationRateRange = (0.02, 0.05)
+act2.scaleRange = (0.25, 1)
+act2.colorLow = (0.3, 0.6, 0.3, 1)
+act2.colorHigh = (0.4, 0.7, 0.4, 1)
+act2.texture = act2_particle
+act2.dist = 8
+
+act3.numParticles = 0

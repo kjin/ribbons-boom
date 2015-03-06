@@ -1,0 +1,41 @@
+\act
+0
+
+\new
+Seamstress
+seamspeechneutral
+\show
+Oh, Prince Beau!
+
+\new
+Prince Beau
+beauspeech1
+\show
+Why hello, Seamstress.
+
+\new
+Seamstress
+seamspeechneutral
+I've been meaning to talk to you.
+
+\new
+Prince Beau
+beauspeech1
+Yes?
+
+\new
+Seamstress
+seamspeechneutral
+As you know, your father, King Pynne, passed away two months ago.
+As his one and only heir you are next in line for the throne.
+
+\new
+Prince Beau
+beauspeech1
+This is true.
+In fact, if I recall, today is my coronation.
+
+\new
+Walker White
+whitespeech
+At this point everyone is going to get up and go play Black Friday.

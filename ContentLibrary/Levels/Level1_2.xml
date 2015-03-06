@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="XMLContent.Level">
+    <levelNum>1</levelNum>
+    <seamstress>
+      <position>30 -10</position>
+    </seamstress>
+    <ground>
+      <!-- left barrier -->
+      <Item>
+        <position>9 -30</position>
+        <dimensions>12 100</dimensions>
+      </Item>
+      <Item>
+        <position>0 -6</position>
+        <dimensions>100 5</dimensions>
+      </Item>
+      <!-- the platforms (first jump) -->
+      <Item>
+        <position>0 -8</position>
+        <dimensions>42 3</dimensions>
+      </Item>
+      <Item>
+        <position>45 -8</position>
+        <dimensions>40 3</dimensions>
+      </Item>
+      <Item>
+        <position>42 -7</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <!-- the platforms (second jump) -->
+      <Item>
+        <position>52 -10</position>
+        <dimensions>2 2</dimensions>
+      </Item>
+      <Item>
+        <position>51 -9</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>54 -9</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>56 -11</position>
+        <dimensions>2 1</dimensions>
+      </Item>
+      <Item>
+        <position>57 -12</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>80 -19</position>
+        <dimensions>3 1</dimensions>
+      </Item>
+      <Item>
+        <position>80 -20</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <!-- under the ribbon -->
+      <Item>
+        <position>60 -13</position>
+        <dimensions>50 50</dimensions>
+      </Item>
+      <Item>
+        <position>78 -17</position>
+        <dimensions>50 50</dimensions>
+      </Item>
+      <!-- right barrier -->
+      <Item>
+        <position>91 -30</position>
+        <dimensions>20 100</dimensions>
+      </Item>
+    </ground>
+    <miasma></miasma>
+    <gameGrid>82 -20</gameGrid>
+    <ribbons>
+      <Item>
+        <path>
+          60 -13
+          78 -13
+          78 -17
+          91 -17
+        </path>
+        <start>0</start>
+        <end>17</end>
+        <loop>false</loop>
+        <color>0</color>
+      </Item>
+    </ribbons>
+    <cameras></cameras>
+    <ribbonBoxes>
+      <Item>
+        <ribbonID>0</ribbonID>
+        <position>10</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+        <flipped>false</flipped>
+      </Item>
+    </ribbonBoxes>
+    <shooters></shooters>
+    <needles></needles>
+    <hooks></hooks>
+    <telescopingBlocks></telescopingBlocks>
+    <flipbars></flipbars>
+    <rotatingPlatforms></rotatingPlatforms>
+    <saveRocks>
+      <Item>
+        <position> 82 -19.5 </position>
+        <endFlag>true</endFlag>
+      </Item>      
+    </saveRocks>
+    <decorations>
+	<Item>
+        <image>arrow</image>
+        <position>30 -12</position>
+        <dimensions>1.5 1.5</dimensions>
+        <rotation>0</rotation>
+      </Item>
+    </decorations>
+    <collectables>
+      <Item>
+        <position>50 -13</position>
+        <id>0</id>
+      </Item>
+      <Item>
+        <position>78 -21</position>
+        <id>1</id>
+      </Item>
+      <Item>
+        <position>90 -20</position>
+        <id>2</id>
+      </Item>
+    </collectables>
+    <gems></gems>
+  </Asset>
+</XnaContent>

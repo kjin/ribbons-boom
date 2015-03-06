@@ -1,0 +1,473 @@
+<?xml version="1.0"?>
+<XnaContent>
+  <Asset Type="XMLContent.Level">
+    <levelNum>2</levelNum>
+    <seamstress>
+      <position>4.5 -11.5</position>
+    </seamstress>
+    <ground>
+      <Item>
+        <position>3 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>4 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>5 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>6 -2</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>6 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>6 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>6 -5</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>6 -6</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>6 -7</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>6 -8</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>6 -9</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>6 -10</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>6 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>7 -2</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>8 -2</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>9 -2</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>10 -2</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>11 -2</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>12 -2</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>13 -2</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>14 -2</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>14 -5</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>14 -6</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>14 -7</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>14 -8</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>14 -9</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>14 -10</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>14 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>15 -2</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>15 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>15 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>15 -5</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>15 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>16 -2</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>16 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>16 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>16 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>17 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>18 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>18 -6</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>19 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>19 -6</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>20 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>20 -6</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>21 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>21 -6</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>21 -7</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>21 -8</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>21 -9</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>21 -10</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>22 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>22 -10</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>23 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>24 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>25 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>26 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>27 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>28 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>28 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>29 -5</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>29 -6</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>29 -7</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>29 -8</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>29 -9</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>29 -10</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>29 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <!-- right ending platform-->
+      <Item>
+        <position>40 -11</position>
+        <dimensions>5 1</dimensions>
+      </Item>
+      <!-- top block for camera-->
+      <Item>
+        <position>20 -30</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <!-- bottom of level -->
+      <Item>
+        <position>2 -2</position>
+        <dimensions>28 1</dimensions>
+      </Item>
+      <!-- leftbottom of level -->
+      <Item>
+        <position>2 -11</position>
+        <dimensions>4 10</dimensions>
+      </Item>
+      <Item>
+        <position>7 -11</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <!-- fill right bottom crevasse -->
+      <Item>
+        <position>29 -4</position>
+        <dimensions>1 2</dimensions>
+      </Item>
+    </ground>
+    <miasma>
+      <Item>
+        <position>7 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>7 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>8 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>8 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>9 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>9 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>10 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>10 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>11 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>11 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>12 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>12 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>13 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>13 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>14 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>14 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <!-- right pit -->
+      <Item>
+        <position>30 -9</position>
+        <dimensions>15 6</dimensions>
+      </Item>
+      <!-- left pit -->
+      <Item>
+        <position>7 -8</position>
+        <dimensions>7 4</dimensions>
+      </Item>
+    </miasma>
+    <gameGrid>45 -16</gameGrid>
+    <ribbons>
+      <Item>
+        <path>5 -11
+8 -11
+8 -10
+7 -10
+7 -4
+</path>
+        <start>0</start>
+        <end>7</end>
+        <loop>false</loop>
+        <color>0</color>
+      </Item>
+      <Item>
+        <path>18 -3
+29 -3
+29 -10
+28 -10
+28 -11
+32 -11
+34 -11
+34 -5
+</path>
+        <start>1</start>
+        <end>24</end>
+        <loop>false</loop>
+        <color>0</color>
+      </Item>
+      <Item>
+        <path>18 -6
+21 -6
+21 -10
+</path>
+        <start>2</start>
+        <end>7</end>
+        <loop>false</loop>
+        <color>0</color>
+      </Item>
+    </ribbons>
+    <cameras />
+    <ribbonBoxes>
+      <Item>
+        <ribbonID>2</ribbonID>
+        <position>5</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+        <flipped>false</flipped>
+      </Item>
+    </ribbonBoxes>
+    <shooters />
+    <needles />
+    <hooks />
+    <telescopingBlocks>
+      <Item>
+        <ribbonID>0</ribbonID>
+        <ribbonPosition>2</ribbonPosition>
+        <height>3</height>
+        <rotation>0</rotation>
+        <flipped>false</flipped>
+      </Item>
+      <Item>
+        <ribbonID>1</ribbonID>
+        <ribbonPosition>19</ribbonPosition>
+        <height>3</height>
+        <rotation>0</rotation>
+        <flipped>false</flipped>
+      </Item>
+    </telescopingBlocks>
+    <flipbars />
+    <rotatingPlatforms />
+    <saveRocks>
+      <Item>
+        <position>43 -11.5</position>
+        <endFlag>true</endFlag>
+      </Item>
+    </saveRocks>
+    <decorations />
+    <collectables>
+      <Item>
+        <position>15 -8</position>
+        <id>0</id>
+      </Item>
+      <Item>
+        <position>25 -15</position>
+        <id>1</id>
+      </Item>
+      <Item>
+        <position>35.5 -10.5</position>
+        <id>2</id>
+      </Item>
+    </collectables>
+    <gems />
+  </Asset>
+</XnaContent>

@@ -1,0 +1,61 @@
+\act
+0
+
+\new
+Seamstress
+seamspeechneutral
+\show
+Seriously, whose idea was it to put the ribbon training grounds in the royal chambers?
+Hmm? What's this?
+
+\new
+[Note]
+seamspeechneutral
+"I have taken Prince Beau. You will never get him back, so you might as well give up."
+"Alliteratively yours, Lord Fjord"
+
+\new
+Seamstress
+seamspeechneutral
+That's not alliteration, that's consonance!
+
+\new
+Magistrate Thimbleton
+whitespeech
+\show
+Seamstress! There you are! Have you found anything?
+What?! Is that a ransom note?
+
+\new
+Seamstress
+seamspeechneutral
+Prince Beau's been kidnapped.
+
+\new
+Magistrate Thimbleton
+whitespeech
+... Well I guess we'll have to call the whole coronation thing off.
+
+\new
+Seamstress
+seamspeechneutral
+Don't be ridiculous! We have to at least try to rescue him.
+
+\new
+Magistrate Thimbleton
+whitespeech
+Well you can't expect me to come with you!
+I'm still in charge of all the catering and everything!
+
+\new
+Seamstress
+seamspeechneutral
+Great idea! You stay here and pretend like those ridiculous little details are still important.
+That way, people shouldn't notice anything's wrong!
+I'm off to save Prince Beau!
+
+\new
+Magistrate Thimbleton
+whitespeech
+...
+So you're thinking you'll only be a couple of hours, right?

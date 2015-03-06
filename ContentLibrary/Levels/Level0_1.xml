@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<XnaContent>
+  <Asset Type="XMLContent.Level">
+    <levelNum>0</levelNum>
+    <seamstress>
+      <position>4.5 -1.5</position>
+    </seamstress>
+    <ground>
+      <Item>
+        <position>0 -1</position>
+        <dimensions>20 5</dimensions>
+      </Item>
+    </ground>
+    <miasma />
+    <gameGrid>20 -11</gameGrid>
+    <ribbons />
+    <cameras />
+    <ribbonBoxes />
+    <shooters />
+    <needles />
+    <hooks />
+    <telescopingBlocks />
+    <flipbars />
+    <rotatingPlatforms />
+    <saveRocks>
+      <Item>
+        <position>15.5 -1.5</position>
+        <endFlag>true</endFlag>
+      </Item>
+    </saveRocks>
+    <decorations>
+		<Item>
+			<image>Paintings/painting_seamstressmovement</image>
+			<position>10 -4</position>
+			<dimensions>6 4</dimensions>
+			<rotation>0</rotation>
+		</Item>
+	</decorations>
+    <collectables />
+    <gems />
+  </Asset>
+</XnaContent>

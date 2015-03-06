@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<XnaContent>
+  <Asset Type="XMLContent.Level">
+    <levelNum>0</levelNum>
+    <seamstress>
+      <position>4.5 -1.5</position>
+    </seamstress>
+    <ground>
+      <Item>
+        <position>0 -1</position>
+        <dimensions>20 5</dimensions>
+      </Item>
+      <Item>
+        <position>12 -17</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>12 -6</position>
+        <dimensions>8 5</dimensions>
+      </Item>
+    </ground>
+    <miasma />
+    <gameGrid>20 -15</gameGrid>
+    <ribbons>
+		<Item>
+			<path>
+			  5 -1
+			  12 -1
+			  12 -6
+			  15 -6
+			</path>
+			<start>0</start>
+			<end>5</end>
+			<loop>false</loop>
+			<color>0</color>
+		</Item>
+	</ribbons>
+    <cameras />
+    <ribbonBoxes>
+		<Item>
+			<ribbonID>0</ribbonID>
+			<position>2</position>
+			<dimensions>1 1</dimensions>
+			<rotation>0</rotation>
+			<flipped>false</flipped>
+		</Item>
+	</ribbonBoxes>
+    <shooters />
+    <needles />
+    <hooks />
+    <telescopingBlocks />
+    <flipbars />
+    <rotatingPlatforms />
+    <saveRocks>
+      <Item>
+        <position>15.5 -6.5</position>
+        <endFlag>true</endFlag>
+      </Item>
+    </saveRocks>
+    <decorations>
+		<Item>
+        <image>Paintings/painting_ribbonmovement</image>
+        <position>7 -5</position>
+        <dimensions>6 4</dimensions>
+        <rotation>0</rotation>
+      </Item>
+	</decorations>
+    <collectables />
+    <gems />
+  </Asset>
+</XnaContent>

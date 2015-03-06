@@ -1,0 +1,30 @@
+\act
+0
+
+\new
+Magistrate Thimbleton
+whitespeech
+\show
+Great Ribbon-tastophe! Somebody, help!
+
+\new
+Seamstress
+seamspeechneutral
+\show
+What is it, Magistrate?
+
+\new
+Magistrate Thimbleton
+whitespeech
+Seamstress, I've been looking everywhere for you!
+
+\new
+Magistrate Thimbleton
+whitespeech
+It's Prince Beau, I can't find him anywhere!
+We can't very well have the coronation without him!
+
+\new
+Seamstress
+seamspeechneutral
+I'll go check his chambers.

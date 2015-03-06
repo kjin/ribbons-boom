@@ -1,0 +1,3496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{A2271ACD-470D-4E44-BD2B-0FE7DF5378DB}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <ContentRootDirectory>Content</ContentRootDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>RibbonsContent</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\GroundEffect.fx">
+      <Name>GroundEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\RibbonEffect.fx">
+      <Name>RibbonEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TextProcessor\TextProcessor.csproj">
+      <Project>{1c39dd3a-25d2-495e-b4b9-d1687113ddfe}</Project>
+      <Name>TextProcessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMLContent\XMLContent.csproj">
+      <Project>{02d46d39-74b0-4f66-a456-d2c4f68f3d5d}</Project>
+      <Name>XMLContent</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\CanvasInternalFont.spritefont">
+      <Name>CanvasInternalFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="Fonts\SplashFont.spritefont">
+      <Name>SplashFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Levels\Level0_1.xml">
+      <Name>Level0_1</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level0_10.xml">
+      <Name>Level0_10</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level0_2.xml">
+      <Name>Level0_2</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level0_3.xml">
+      <SubType>Designer</SubType>
+      <Name>Level0_3</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level0_4.xml">
+      <Name>Level0_4</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level0_5.xml">
+      <Name>Level0_5</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level0_6.xml">
+      <Name>Level0_6</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level0_7.xml">
+      <Name>Level0_7</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level0_8.xml">
+      <Name>Level0_8</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level0_9.xml">
+      <Name>Level0_9</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level1_1.xml">
+      <Name>Level1_1</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level1_2.xml">
+      <Name>Level1_2</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level1_3.xml">
+      <Name>Level1_3</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level1_4.xml">
+      <Name>Level1_4</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level1_5.xml">
+      <Name>Level1_5</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level1_6.xml">
+      <Name>Level1_6</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level1_7.xml">
+      <Name>Level1_7</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level1_8.xml">
+      <Name>Level1_8</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level2_1.xml">
+      <Name>Level2_1</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level2_2.xml">
+      <Name>Level2_2</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level2_3.xml">
+      <Name>Level2_3</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="Levels\Level2_4.xml">
+      <Name>Level2_4</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level2_5.xml">
+      <Name>Level2_5</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level3_1.xml">
+      <Name>Level3_1</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level3_2.xml">
+      <Name>Level3_2</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level3_3.xml">
+      <Name>Level3_3</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level3_4.xml">
+      <Name>Level3_4</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="SFX\camera_click.wav">
+      <Name>camera_click</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="SFX\option_cycle.wav">
+      <Name>option_cycle</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="SFX\option_select.wav">
+      <Name>option_select</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="SFX\seamstress_land.wav">
+      <Name>seamstress_land</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="SFX\seamstress_step.wav">
+      <Name>seamstress_step</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Text\audio.txt">
+      <Name>audio</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+    <Compile Include="Text\controls.txt">
+      <Name>controls</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+    <Compile Include="Text\graphics.txt">
+      <Name>graphics</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\1x1plat.png">
+      <Name>1x1plat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\1x1plat2.png">
+      <Name>1x1plat2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\1x1plat3.png">
+      <Name>1x1plat3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\bullet.png">
+      <Name>bullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\bulletanimation.png">
+      <Name>bulletanimation</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\fjord_layer0.png">
+      <Name>fjord_layer0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\fjord_layer1.png">
+      <Name>fjord_layer1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\fjord_layer2.png">
+      <Name>fjord_layer2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\flipbar.png">
+      <Name>flipbar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\groundtile.jpg">
+      <Name>groundtile</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\groundtiletess.jpg">
+      <Name>groundtiletess</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ground_edge.png">
+      <Name>ground_edge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ground_fill.png">
+      <Name>ground_fill</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\hookbody.png">
+      <Name>hookbody</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\hooktop.png">
+      <Name>hooktop</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\miamonster1.png">
+      <Name>miamonster1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\miamonster2.png">
+      <Name>miamonster2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\miamonster3.png">
+      <Name>miamonster3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\miasma.png">
+      <Name>miasma</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ribbon.png">
+      <Name>ribbon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ribbon_texture.png">
+      <Name>ribbon_texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ribbon_texture_2.png">
+      <Name>ribbon_texture_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\rotationblock.png">
+      <Name>rotationblock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\rotationcircle.png">
+      <Name>rotationcircle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\saverock.png">
+      <Name>saverock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\seamstress_fall.png">
+      <Name>seamstress_fall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\seamstress_falldeath.png">
+      <Name>seamstress_falldeath</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\seamstress_idle1.png">
+      <Name>seamstress_idle1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\seamstress_jump.png">
+      <Name>seamstress_jump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\seamstress_run.png">
+      <Name>seamstress_run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\seamstress_stand.png">
+      <Name>seamstress_stand</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\spikes.png">
+      <Name>spikes</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\splashForeground.png">
+      <Name>splashForeground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\splashMidground.png">
+      <Name>splashMidground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\splashRibbon.png">
+      <Name>splashRibbon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\splashTitle.png">
+      <Name>splashTitle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\splash_cursor.png">
+      <Name>splash_cursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\telescopeblock1x1.png">
+      <Name>telescopeblock1x1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\telescopeinside.png">
+      <Name>telescopeinside</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\trampoline.png">
+      <Name>trampoline</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\circle_blue.png">
+      <Name>circle_blue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\circle_green.png">
+      <Name>circle_green</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\circle_orange.png">
+      <Name>circle_orange</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\circle_red.png">
+      <Name>circle_red</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\circle_yellow.png">
+      <Name>circle_yellow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\act1_layer0.png">
+      <Name>act1_layer0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act1_layer1.png">
+      <Name>act1_layer1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act1_layer2.png">
+      <Name>act1_layer2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\act2_layer0.png">
+      <Name>act2_layer0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act2_layer1.png">
+      <Name>act2_layer1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act2_layer2.png">
+      <Name>act2_layer2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\act1_groundtexture.jpg">
+      <Name>act1_groundtexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act1_hookbody.png">
+      <Name>act1_hookbody</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act1_hooktop.png">
+      <Name>act1_hooktop</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act1_plat1x1.jpg">
+      <Name>act1_plat1x1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act1_rock1.png">
+      <Name>act1_rock1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act1_telebase.jpg">
+      <Name>act1_telebase</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act1_teleextend.jpg">
+      <Name>act1_teleextend</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act2_hookbody.png">
+      <Name>act2_hookbody</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act2_hooktop.png">
+      <Name>act2_hooktop</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act2_plat1x1.jpg">
+      <Name>act2_plat1x1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act2_telebase.jpg">
+      <Name>act2_telebase</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act2_teleextend.png">
+      <Name>act2_teleextend</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SFX\ribbon_swap.wav">
+      <Name>ribbon_swap</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\MiasmaDripEffect.fx">
+      <Name>MiasmaDripEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\MiasmaParticleEffect.fx">
+      <Name>MiasmaParticleEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\act0_groundtexture.jpg">
+      <Name>act0_groundtexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act2_bullet.png">
+      <Name>act2_bullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act2_cannon.png">
+      <Name>act2_cannon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act2_groundtexture.jpg">
+      <Name>act2_groundtexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3_bullet.png">
+      <Name>act3_bullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3_cannon.png">
+      <Name>act3_cannon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\saverock_bow.png">
+      <Name>saverock_bow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\saverock_rock.png">
+      <Name>saverock_rock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\act1_platformtexture.jpg">
+      <Name>act1_platformtexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\act0_platformtexture.jpg">
+      <Name>act0_platformtexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\act0_layer0.png">
+      <Name>act0_layer0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act0_layer1.png">
+      <Name>act0_layer1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act0_layer2.png">
+      <Name>act0_layer2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act0_layer3.png">
+      <Name>act0_layer3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\act2_platformtexture.jpg">
+      <Name>act2_platformtexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3crystals.png">
+      <Name>act3crystals</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3_groundtexture.jpg">
+      <Name>act3_groundtexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3_hookbody.png">
+      <Name>act3_hookbody</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3_hooktop.png">
+      <Name>act3_hooktop</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3_platformtexture.jpg">
+      <Name>act3_platformtexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3_telebase.png">
+      <Name>act3_telebase</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3_teleextend.png">
+      <Name>act3_teleextend</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\seamstress_idle.png">
+      <Name>seamstress_idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\act0_groundedge.png">
+      <Name>act0_groundedge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act1_clouds.png">
+      <Name>act1_clouds</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act1_groundedge.png">
+      <Name>act1_groundedge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act2_groundedge.png">
+      <Name>act2_groundedge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3_groundedge.png">
+      <Name>act3_groundedge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Text\bucketscript.txt">
+      <Name>bucketscript</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\beauspeech1.png">
+      <Name>beauspeech1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\seamspeech1.png">
+      <Name>seamspeech1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\seamspeechneutral.png">
+      <Name>seamspeechneutral</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\whitespeech.png">
+      <Name>whitespeech</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Text\intro.txt">
+      <Name>intro</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Text\levelprogression.txt">
+      <Name>levelprogression</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\MiasmaEffect.fx">
+      <Name>MiasmaEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\miasma1.jpg">
+      <Name>miasma1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\miasma2.png">
+      <Name>miasma2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\act3_fireflies.png">
+      <Name>act3_fireflies</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3_layer0.png">
+      <Name>act3_layer0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3_layer1.png">
+      <Name>act3_layer1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3_layer2.png">
+      <Name>act3_layer2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3_layer3.png">
+      <Name>act3_layer3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act3_layer4.png">
+      <Name>act3_layer4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Text\SeriouslyFunny.txt">
+      <Name>SeriouslyFunny</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\ribbonsLogo.png">
+      <Name>ribbonsLogo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\CutsceneFont.spritefont">
+      <Name>CutsceneFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\card.png">
+      <Name>card</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\cardshell.png">
+      <Name>cardshell</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\act1_particle.png">
+      <Name>act1_particle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Collectables\collect0.png">
+      <Name>collect0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Collectables\collect1.png">
+      <Name>collect1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Collectables\collect2.png">
+      <Name>collect2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Collectables\collect3.png">
+      <Name>collect3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Collectables\collect4.png">
+      <Name>collect4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Collectables\collect5.png">
+      <Name>collect5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\seamstress_stun.png">
+      <Name>seamstress_stun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\RibbonGem\ribbongem_bottom.png">
+      <Name>ribbongem_bottom</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\RibbonGem\ribbongem_top.png">
+      <Name>ribbongem_top</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\circle_grey.png">
+      <Name>circle_grey</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\circle_grey.png">
+      <Name>circle_grey</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\arrow.png">
+      <Name>arrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Text\Script0_1.txt">
+      <Name>Script0_1</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+    <Compile Include="Text\Script0_2.txt">
+      <Name>Script0_2</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\act0_ceiling.png">
+      <Name>act0_ceiling</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\sign_caution.png">
+      <Name>sign_caution</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\sign_danger.png">
+      <Name>sign_danger</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\sign_miasma.png">
+      <Name>sign_miasma</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\arrow.png">
+      <Name>arrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\circle_grey.png">
+      <Name>circle_grey</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\loading_trappedbeau.png">
+      <Name>loading_trappedbeau</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\menu_background.png">
+      <Name>menu_background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\text_pressenter.png">
+      <Name>text_pressenter</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\textselectribbon.png">
+      <Name>textselectribbon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\aura_backsprite.png">
+      <Name>aura_backsprite</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\aura_frontsprite.png">
+      <Name>aura_frontsprite</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\text_exit.png">
+      <Name>text_exit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\text_loadgame.png">
+      <Name>text_loadgame</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\text_loading.png">
+      <Name>text_loading</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\text_mainmenu.png">
+      <Name>text_mainmenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\text_newgame.png">
+      <Name>text_newgame</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\text_options.png">
+      <Name>text_options</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\text_pause.png">
+      <Name>text_pause</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\text_restartfrombeginning.png">
+      <Name>text_restartfrombeginning</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\text_restartfromcheckpoint.png">
+      <Name>text_restartfromcheckpoint</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\text_unpause.png">
+      <Name>text_unpause</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SFX\seamstress_jump.wav">
+      <Name>seamstress_jump</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Text\particles.txt">
+      <Name>particles</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\act2_particle.png">
+      <Name>act2_particle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="XACT\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\file_back.png">
+      <Name>file_back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\file_cursor.png">
+      <Name>file_cursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Previews\preview_act0.png">
+      <Name>preview_act0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Previews\preview_act1.png">
+      <Name>preview_act1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Previews\preview_act2.png">
+      <Name>preview_act2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Previews\preview_act3.png">
+      <Name>preview_act3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Previews\preview_grid.png">
+      <Name>preview_grid</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\Conformity24.spritefont">
+      <Name>Conformity24</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\CollectableCountFont.spritefont">
+      <Name>CollectableCountFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\file_actionback.png">
+      <Name>file_actionback</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\Shimmer.fx">
+      <Name>Shimmer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\RibbonGem\ribbongem_middle.png">
+      <Name>ribbongem_middle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\wetfloorsign.png">
+      <Name>wetfloorsign</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\ImpactFont.spritefont">
+      <Name>ImpactFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Text\leveltitles.txt">
+      <Name>leveltitles</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\Conformity32.spritefont">
+      <Name>Conformity32</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\LevelTitle\titleCardBottom.png">
+      <Name>titleCardBottom</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\seamstress_land.png">
+      <Name>seamstress_land</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\largeexitdoor.png">
+      <Name>largeexitdoor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\Conformity96.spritefont">
+      <SubType>Designer</SubType>
+      <Name>Conformity96</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SFX\collectable_collect.wav">
+      <Name>collectable_collect</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SFX\ribbon_collision.wav">
+      <Name>ribbon_collision</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SFX\ribbongem_powerup.wav">
+      <Name>ribbongem_powerup</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="SFX\ribbon_flip.wav">
+      <Name>ribbon_flip</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\exclamation.png">
+      <Name>exclamation</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\background_filter.png">
+      <Name>background_filter</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ribbon_texture_3.png">
+      <Name>ribbon_texture_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ribbon_texture_4.png">
+      <Name>ribbon_texture_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\spool.png">
+      <Name>spool</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\spool_a.png">
+      <Name>spool_a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\spool_d.png">
+      <Name>spool_d</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\spool_L.png">
+      <Name>spool_L</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\spool_r.png">
+      <Name>spool_r</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\miasmaAnim_000000.png">
+      <Name>miasmaAnim_000000</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000001.png">
+      <Name>miasmaAnim_000001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000002.png">
+      <Name>miasmaAnim_000002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000003.png">
+      <Name>miasmaAnim_000003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000004.png">
+      <Name>miasmaAnim_000004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000005.png">
+      <Name>miasmaAnim_000005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000006.png">
+      <Name>miasmaAnim_000006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000007.png">
+      <Name>miasmaAnim_000007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000008.png">
+      <Name>miasmaAnim_000008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000009.png">
+      <Name>miasmaAnim_000009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000010.png">
+      <Name>miasmaAnim_000010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000011.png">
+      <Name>miasmaAnim_000011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000012.png">
+      <Name>miasmaAnim_000012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000013.png">
+      <Name>miasmaAnim_000013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000014.png">
+      <Name>miasmaAnim_000014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000015.png">
+      <Name>miasmaAnim_000015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000016.png">
+      <Name>miasmaAnim_000016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000017.png">
+      <Name>miasmaAnim_000017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000018.png">
+      <Name>miasmaAnim_000018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000019.png">
+      <Name>miasmaAnim_000019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000020.png">
+      <Name>miasmaAnim_000020</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000021.png">
+      <Name>miasmaAnim_000021</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000022.png">
+      <Name>miasmaAnim_000022</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000023.png">
+      <Name>miasmaAnim_000023</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000024.png">
+      <Name>miasmaAnim_000024</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000025.png">
+      <Name>miasmaAnim_000025</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000026.png">
+      <Name>miasmaAnim_000026</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000027.png">
+      <Name>miasmaAnim_000027</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000028.png">
+      <Name>miasmaAnim_000028</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000029.png">
+      <Name>miasmaAnim_000029</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000030.png">
+      <Name>miasmaAnim_000030</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000031.png">
+      <Name>miasmaAnim_000031</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000032.png">
+      <Name>miasmaAnim_000032</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000033.png">
+      <Name>miasmaAnim_000033</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000034.png">
+      <Name>miasmaAnim_000034</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000035.png">
+      <Name>miasmaAnim_000035</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000036.png">
+      <Name>miasmaAnim_000036</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000037.png">
+      <Name>miasmaAnim_000037</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000038.png">
+      <Name>miasmaAnim_000038</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000039.png">
+      <Name>miasmaAnim_000039</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000040.png">
+      <Name>miasmaAnim_000040</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000041.png">
+      <Name>miasmaAnim_000041</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000042.png">
+      <Name>miasmaAnim_000042</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000043.png">
+      <Name>miasmaAnim_000043</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000044.png">
+      <Name>miasmaAnim_000044</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000045.png">
+      <Name>miasmaAnim_000045</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000046.png">
+      <Name>miasmaAnim_000046</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000047.png">
+      <Name>miasmaAnim_000047</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000048.png">
+      <Name>miasmaAnim_000048</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000049.png">
+      <Name>miasmaAnim_000049</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000050.png">
+      <Name>miasmaAnim_000050</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000051.png">
+      <Name>miasmaAnim_000051</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000052.png">
+      <Name>miasmaAnim_000052</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000053.png">
+      <Name>miasmaAnim_000053</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000054.png">
+      <Name>miasmaAnim_000054</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000055.png">
+      <Name>miasmaAnim_000055</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000056.png">
+      <Name>miasmaAnim_000056</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000057.png">
+      <Name>miasmaAnim_000057</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000058.png">
+      <Name>miasmaAnim_000058</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000059.png">
+      <Name>miasmaAnim_000059</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000060.png">
+      <Name>miasmaAnim_000060</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000061.png">
+      <Name>miasmaAnim_000061</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000062.png">
+      <Name>miasmaAnim_000062</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000063.png">
+      <Name>miasmaAnim_000063</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000064.png">
+      <Name>miasmaAnim_000064</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000065.png">
+      <Name>miasmaAnim_000065</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000066.png">
+      <Name>miasmaAnim_000066</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000067.png">
+      <Name>miasmaAnim_000067</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000068.png">
+      <Name>miasmaAnim_000068</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000069.png">
+      <Name>miasmaAnim_000069</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000070.png">
+      <Name>miasmaAnim_000070</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000071.png">
+      <Name>miasmaAnim_000071</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000072.png">
+      <Name>miasmaAnim_000072</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000073.png">
+      <Name>miasmaAnim_000073</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000074.png">
+      <Name>miasmaAnim_000074</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000075.png">
+      <Name>miasmaAnim_000075</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000076.png">
+      <Name>miasmaAnim_000076</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000077.png">
+      <Name>miasmaAnim_000077</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000078.png">
+      <Name>miasmaAnim_000078</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000079.png">
+      <Name>miasmaAnim_000079</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000080.png">
+      <Name>miasmaAnim_000080</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000081.png">
+      <Name>miasmaAnim_000081</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000082.png">
+      <Name>miasmaAnim_000082</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000083.png">
+      <Name>miasmaAnim_000083</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000084.png">
+      <Name>miasmaAnim_000084</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000085.png">
+      <Name>miasmaAnim_000085</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000086.png">
+      <Name>miasmaAnim_000086</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000087.png">
+      <Name>miasmaAnim_000087</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000088.png">
+      <Name>miasmaAnim_000088</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000089.png">
+      <Name>miasmaAnim_000089</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000090.png">
+      <Name>miasmaAnim_000090</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000091.png">
+      <Name>miasmaAnim_000091</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000092.png">
+      <Name>miasmaAnim_000092</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000093.png">
+      <Name>miasmaAnim_000093</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000094.png">
+      <Name>miasmaAnim_000094</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000095.png">
+      <Name>miasmaAnim_000095</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000096.png">
+      <Name>miasmaAnim_000096</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000097.png">
+      <Name>miasmaAnim_000097</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000098.png">
+      <Name>miasmaAnim_000098</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000099.png">
+      <Name>miasmaAnim_000099</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000100.png">
+      <Name>miasmaAnim_000100</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000101.png">
+      <Name>miasmaAnim_000101</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000102.png">
+      <Name>miasmaAnim_000102</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000103.png">
+      <Name>miasmaAnim_000103</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000104.png">
+      <Name>miasmaAnim_000104</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000105.png">
+      <Name>miasmaAnim_000105</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000106.png">
+      <Name>miasmaAnim_000106</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000107.png">
+      <Name>miasmaAnim_000107</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000108.png">
+      <Name>miasmaAnim_000108</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000109.png">
+      <Name>miasmaAnim_000109</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000110.png">
+      <Name>miasmaAnim_000110</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000111.png">
+      <Name>miasmaAnim_000111</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000112.png">
+      <Name>miasmaAnim_000112</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000113.png">
+      <Name>miasmaAnim_000113</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000114.png">
+      <Name>miasmaAnim_000114</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000115.png">
+      <Name>miasmaAnim_000115</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000116.png">
+      <Name>miasmaAnim_000116</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000117.png">
+      <Name>miasmaAnim_000117</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000118.png">
+      <Name>miasmaAnim_000118</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\miasmaAnim_000119.png">
+      <Name>miasmaAnim_000119</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000000.png">
+      <Name>ribbonPathAnim_000000</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000001.png">
+      <Name>ribbonPathAnim_000001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000002.png">
+      <Name>ribbonPathAnim_000002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000003.png">
+      <Name>ribbonPathAnim_000003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000004.png">
+      <Name>ribbonPathAnim_000004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000005.png">
+      <Name>ribbonPathAnim_000005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000006.png">
+      <Name>ribbonPathAnim_000006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000007.png">
+      <Name>ribbonPathAnim_000007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000008.png">
+      <Name>ribbonPathAnim_000008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000009.png">
+      <Name>ribbonPathAnim_000009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000010.png">
+      <Name>ribbonPathAnim_000010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000011.png">
+      <Name>ribbonPathAnim_000011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000012.png">
+      <Name>ribbonPathAnim_000012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000013.png">
+      <Name>ribbonPathAnim_000013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000014.png">
+      <Name>ribbonPathAnim_000014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000015.png">
+      <Name>ribbonPathAnim_000015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000016.png">
+      <Name>ribbonPathAnim_000016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000017.png">
+      <Name>ribbonPathAnim_000017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000018.png">
+      <Name>ribbonPathAnim_000018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000019.png">
+      <Name>ribbonPathAnim_000019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000020.png">
+      <Name>ribbonPathAnim_000020</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000021.png">
+      <Name>ribbonPathAnim_000021</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000022.png">
+      <Name>ribbonPathAnim_000022</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000023.png">
+      <Name>ribbonPathAnim_000023</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000024.png">
+      <Name>ribbonPathAnim_000024</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000025.png">
+      <Name>ribbonPathAnim_000025</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000026.png">
+      <Name>ribbonPathAnim_000026</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000027.png">
+      <Name>ribbonPathAnim_000027</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000028.png">
+      <Name>ribbonPathAnim_000028</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000029.png">
+      <Name>ribbonPathAnim_000029</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000030.png">
+      <Name>ribbonPathAnim_000030</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000031.png">
+      <Name>ribbonPathAnim_000031</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000032.png">
+      <Name>ribbonPathAnim_000032</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000033.png">
+      <Name>ribbonPathAnim_000033</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000034.png">
+      <Name>ribbonPathAnim_000034</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000035.png">
+      <Name>ribbonPathAnim_000035</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000036.png">
+      <Name>ribbonPathAnim_000036</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000037.png">
+      <Name>ribbonPathAnim_000037</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000038.png">
+      <Name>ribbonPathAnim_000038</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000039.png">
+      <Name>ribbonPathAnim_000039</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000040.png">
+      <Name>ribbonPathAnim_000040</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000041.png">
+      <Name>ribbonPathAnim_000041</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000042.png">
+      <Name>ribbonPathAnim_000042</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000043.png">
+      <Name>ribbonPathAnim_000043</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000044.png">
+      <Name>ribbonPathAnim_000044</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000045.png">
+      <Name>ribbonPathAnim_000045</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000046.png">
+      <Name>ribbonPathAnim_000046</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000047.png">
+      <Name>ribbonPathAnim_000047</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000048.png">
+      <Name>ribbonPathAnim_000048</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000049.png">
+      <Name>ribbonPathAnim_000049</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000050.png">
+      <Name>ribbonPathAnim_000050</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000051.png">
+      <Name>ribbonPathAnim_000051</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000052.png">
+      <Name>ribbonPathAnim_000052</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000053.png">
+      <Name>ribbonPathAnim_000053</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000054.png">
+      <Name>ribbonPathAnim_000054</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000055.png">
+      <Name>ribbonPathAnim_000055</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000056.png">
+      <Name>ribbonPathAnim_000056</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000057.png">
+      <Name>ribbonPathAnim_000057</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000058.png">
+      <Name>ribbonPathAnim_000058</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000059.png">
+      <Name>ribbonPathAnim_000059</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000060.png">
+      <Name>ribbonPathAnim_000060</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000061.png">
+      <Name>ribbonPathAnim_000061</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000062.png">
+      <Name>ribbonPathAnim_000062</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000063.png">
+      <Name>ribbonPathAnim_000063</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000064.png">
+      <Name>ribbonPathAnim_000064</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000065.png">
+      <Name>ribbonPathAnim_000065</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000066.png">
+      <Name>ribbonPathAnim_000066</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000067.png">
+      <Name>ribbonPathAnim_000067</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000068.png">
+      <Name>ribbonPathAnim_000068</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000069.png">
+      <Name>ribbonPathAnim_000069</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000070.png">
+      <Name>ribbonPathAnim_000070</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000071.png">
+      <Name>ribbonPathAnim_000071</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000072.png">
+      <Name>ribbonPathAnim_000072</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000073.png">
+      <Name>ribbonPathAnim_000073</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000074.png">
+      <Name>ribbonPathAnim_000074</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000075.png">
+      <Name>ribbonPathAnim_000075</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000076.png">
+      <Name>ribbonPathAnim_000076</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000077.png">
+      <Name>ribbonPathAnim_000077</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000078.png">
+      <Name>ribbonPathAnim_000078</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000079.png">
+      <Name>ribbonPathAnim_000079</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000080.png">
+      <Name>ribbonPathAnim_000080</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000081.png">
+      <Name>ribbonPathAnim_000081</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000082.png">
+      <Name>ribbonPathAnim_000082</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000083.png">
+      <Name>ribbonPathAnim_000083</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000084.png">
+      <Name>ribbonPathAnim_000084</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000085.png">
+      <Name>ribbonPathAnim_000085</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000086.png">
+      <Name>ribbonPathAnim_000086</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000087.png">
+      <Name>ribbonPathAnim_000087</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000088.png">
+      <Name>ribbonPathAnim_000088</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000089.png">
+      <Name>ribbonPathAnim_000089</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000090.png">
+      <Name>ribbonPathAnim_000090</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000091.png">
+      <Name>ribbonPathAnim_000091</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000092.png">
+      <Name>ribbonPathAnim_000092</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000093.png">
+      <Name>ribbonPathAnim_000093</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000094.png">
+      <Name>ribbonPathAnim_000094</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000095.png">
+      <Name>ribbonPathAnim_000095</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000096.png">
+      <Name>ribbonPathAnim_000096</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000097.png">
+      <Name>ribbonPathAnim_000097</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000098.png">
+      <Name>ribbonPathAnim_000098</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000099.png">
+      <Name>ribbonPathAnim_000099</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000100.png">
+      <Name>ribbonPathAnim_000100</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000101.png">
+      <Name>ribbonPathAnim_000101</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000102.png">
+      <Name>ribbonPathAnim_000102</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000103.png">
+      <Name>ribbonPathAnim_000103</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000104.png">
+      <Name>ribbonPathAnim_000104</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000105.png">
+      <Name>ribbonPathAnim_000105</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000106.png">
+      <Name>ribbonPathAnim_000106</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000107.png">
+      <Name>ribbonPathAnim_000107</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000108.png">
+      <Name>ribbonPathAnim_000108</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000109.png">
+      <Name>ribbonPathAnim_000109</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000110.png">
+      <Name>ribbonPathAnim_000110</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000111.png">
+      <Name>ribbonPathAnim_000111</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000112.png">
+      <Name>ribbonPathAnim_000112</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000113.png">
+      <Name>miasmaTopMask_000113</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000114.png">
+      <Name>miasmaTopMask_000114</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000115.png">
+      <Name>miasmaTopMask_000115</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000116.png">
+      <Name>miasmaTopMask_000116</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000117.png">
+      <Name>miasmaTopMask_000117</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000118.png">
+      <Name>miasmaTopMask_000118</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000119.png">
+      <Name>miasmaTopMask_000119</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\file_back.png">
+      <Name>file_back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\file_cursor.png">
+      <Name>file_cursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Previews\preview_act0.png">
+      <Name>preview_act0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Previews\preview_act1.png">
+      <Name>preview_act1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Previews\preview_act2.png">
+      <Name>preview_act2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Previews\preview_act3.png">
+      <Name>preview_act3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Previews\preview_grid.png">
+      <Name>preview_grid</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\Conformity24.spritefont">
+      <Name>Conformity24</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\CollectableCountFont.spritefont">
+      <Name>CollectableCountFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\file_actionback.png">
+      <Name>file_actionback</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\Shimmer.fx">
+      <Name>Shimmer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\RibbonGem\ribbongem_middle.png">
+      <Name>ribbongem_middle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\spool_a.png">
+      <Name>spool_a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000115.png">
+      <Name>ribbonPathAnim_000115</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000116.png">
+      <Name>ribbonPathAnim_000116</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000117.png">
+      <Name>ribbonPathAnim_000117</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000118.png">
+      <Name>ribbonPathAnim_000118</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000119.png">
+      <Name>ribbonPathAnim_000119</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Masks\miasmaTopMask_000000.png">
+      <Name>miasmaTopMask_000000</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000001.png">
+      <Name>miasmaTopMask_000001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000002.png">
+      <Name>miasmaTopMask_000002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000003.png">
+      <Name>miasmaTopMask_000003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000004.png">
+      <Name>miasmaTopMask_000004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000005.png">
+      <Name>miasmaTopMask_000005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000006.png">
+      <Name>miasmaTopMask_000006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000007.png">
+      <Name>miasmaTopMask_000007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000008.png">
+      <Name>miasmaTopMask_000008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000009.png">
+      <Name>miasmaTopMask_000009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000010.png">
+      <Name>miasmaTopMask_000010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000011.png">
+      <Name>miasmaTopMask_000011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000012.png">
+      <Name>miasmaTopMask_000012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000013.png">
+      <Name>miasmaTopMask_000013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000014.png">
+      <Name>miasmaTopMask_000014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000015.png">
+      <Name>miasmaTopMask_000015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000016.png">
+      <Name>miasmaTopMask_000016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000017.png">
+      <Name>miasmaTopMask_000017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000018.png">
+      <Name>miasmaTopMask_000018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000019.png">
+      <Name>miasmaTopMask_000019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000020.png">
+      <Name>miasmaTopMask_000020</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000021.png">
+      <Name>miasmaTopMask_000021</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000022.png">
+      <Name>miasmaTopMask_000022</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000023.png">
+      <Name>miasmaTopMask_000023</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000024.png">
+      <Name>miasmaTopMask_000024</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000025.png">
+      <Name>miasmaTopMask_000025</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000026.png">
+      <Name>miasmaTopMask_000026</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000027.png">
+      <Name>miasmaTopMask_000027</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000028.png">
+      <Name>miasmaTopMask_000028</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000029.png">
+      <Name>miasmaTopMask_000029</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000030.png">
+      <Name>miasmaTopMask_000030</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000031.png">
+      <Name>miasmaTopMask_000031</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000032.png">
+      <Name>miasmaTopMask_000032</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000033.png">
+      <Name>miasmaTopMask_000033</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000034.png">
+      <Name>miasmaTopMask_000034</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000035.png">
+      <Name>miasmaTopMask_000035</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000036.png">
+      <Name>miasmaTopMask_000036</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000037.png">
+      <Name>miasmaTopMask_000037</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000038.png">
+      <Name>miasmaTopMask_000038</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000039.png">
+      <Name>miasmaTopMask_000039</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000040.png">
+      <Name>miasmaTopMask_000040</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000041.png">
+      <Name>miasmaTopMask_000041</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000042.png">
+      <Name>miasmaTopMask_000042</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000043.png">
+      <Name>miasmaTopMask_000043</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000044.png">
+      <Name>miasmaTopMask_000044</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000045.png">
+      <Name>miasmaTopMask_000045</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000046.png">
+      <Name>miasmaTopMask_000046</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000047.png">
+      <Name>miasmaTopMask_000047</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000048.png">
+      <Name>miasmaTopMask_000048</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000049.png">
+      <Name>miasmaTopMask_000049</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000050.png">
+      <Name>miasmaTopMask_000050</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000051.png">
+      <Name>miasmaTopMask_000051</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000052.png">
+      <Name>miasmaTopMask_000052</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000053.png">
+      <Name>miasmaTopMask_000053</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000054.png">
+      <Name>miasmaTopMask_000054</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000055.png">
+      <Name>miasmaTopMask_000055</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000056.png">
+      <Name>miasmaTopMask_000056</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000057.png">
+      <Name>miasmaTopMask_000057</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000058.png">
+      <Name>miasmaTopMask_000058</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000059.png">
+      <Name>miasmaTopMask_000059</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000060.png">
+      <Name>miasmaTopMask_000060</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000061.png">
+      <Name>miasmaTopMask_000061</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000062.png">
+      <Name>miasmaTopMask_000062</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000063.png">
+      <Name>miasmaTopMask_000063</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000064.png">
+      <Name>miasmaTopMask_000064</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000065.png">
+      <Name>miasmaTopMask_000065</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000066.png">
+      <Name>miasmaTopMask_000066</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000067.png">
+      <Name>miasmaTopMask_000067</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000068.png">
+      <Name>miasmaTopMask_000068</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000069.png">
+      <Name>miasmaTopMask_000069</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000070.png">
+      <Name>miasmaTopMask_000070</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000071.png">
+      <Name>miasmaTopMask_000071</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000072.png">
+      <Name>miasmaTopMask_000072</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000073.png">
+      <Name>miasmaTopMask_000073</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000074.png">
+      <Name>miasmaTopMask_000074</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000075.png">
+      <Name>miasmaTopMask_000075</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000076.png">
+      <Name>miasmaTopMask_000076</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000077.png">
+      <Name>miasmaTopMask_000077</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000078.png">
+      <Name>miasmaTopMask_000078</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000079.png">
+      <Name>miasmaTopMask_000079</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000080.png">
+      <Name>miasmaTopMask_000080</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000081.png">
+      <Name>miasmaTopMask_000081</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000082.png">
+      <Name>miasmaTopMask_000082</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000083.png">
+      <Name>miasmaTopMask_000083</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000084.png">
+      <Name>miasmaTopMask_000084</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000085.png">
+      <Name>miasmaTopMask_000085</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000086.png">
+      <Name>miasmaTopMask_000086</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000087.png">
+      <Name>miasmaTopMask_000087</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000088.png">
+      <Name>miasmaTopMask_000088</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000089.png">
+      <Name>miasmaTopMask_000089</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000090.png">
+      <Name>miasmaTopMask_000090</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000091.png">
+      <Name>miasmaTopMask_000091</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000092.png">
+      <Name>miasmaTopMask_000092</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000093.png">
+      <Name>miasmaTopMask_000093</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000094.png">
+      <Name>miasmaTopMask_000094</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000095.png">
+      <Name>miasmaTopMask_000095</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000096.png">
+      <Name>miasmaTopMask_000096</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000097.png">
+      <Name>miasmaTopMask_000097</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000098.png">
+      <Name>miasmaTopMask_000098</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000099.png">
+      <Name>miasmaTopMask_000099</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000100.png">
+      <Name>miasmaTopMask_000100</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000101.png">
+      <Name>miasmaTopMask_000101</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000102.png">
+      <Name>miasmaTopMask_000102</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000103.png">
+      <Name>miasmaTopMask_000103</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000104.png">
+      <Name>miasmaTopMask_000104</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000105.png">
+      <Name>miasmaTopMask_000105</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000106.png">
+      <Name>miasmaTopMask_000106</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000107.png">
+      <Name>miasmaTopMask_000107</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000108.png">
+      <Name>miasmaTopMask_000108</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000109.png">
+      <Name>miasmaTopMask_000109</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000110.png">
+      <Name>miasmaTopMask_000110</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000111.png">
+      <Name>miasmaTopMask_000111</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000112.png">
+      <Name>miasmaTopMask_000112</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000113.png">
+      <Name>miasmaTopMask_000113</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000114.png">
+      <Name>miasmaTopMask_000114</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000115.png">
+      <Name>miasmaTopMask_000115</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\ImpactFont.spritefont">
+      <Name>ImpactFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Text\leveltitles.txt">
+      <Name>leveltitles</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\Conformity32.spritefont">
+      <Name>Conformity32</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\seamstress_land.png">
+      <Name>seamstress_land</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000116.png">
+      <Name>miasmaTopMask_000116</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000117.png">
+      <Name>miasmaTopMask_000117</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000118.png">
+      <Name>miasmaTopMask_000118</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Masks\miasmaTopMask_000119.png">
+      <Name>miasmaTopMask_000119</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\LevelTitle\titleCardBottom.png">
+      <Name>titleCardBottom</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\FullBackgrounds\act0_fullimage.jpg">
+      <Name>act0_fullimage</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\FullBackgrounds\act1_fullimage.jpg">
+      <Name>act1_fullimage</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\FullBackgrounds\act2_fullimage.jpg">
+      <Name>act2_fullimage</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\FullBackgrounds\act3_fullimage.jpg">
+      <Name>act3_fullimage</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\RoundedLevelPortraits.fx">
+      <Name>RoundedLevelPortraits</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\Conformity48.spritefont">
+      <SubType>Designer</SubType>
+      <Name>Conformity48</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\ribbonPathAnim_000113.png">
+      <Name>ribbonPathAnim_000113</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Animations\ribbonPathAnim_000114.png">
+      <Name>ribbonPathAnim_000114</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\LevelEndCards\end_falldeath.png">
+      <Name>end_falldeath</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\LevelEndCards\end_miasmadeath.png">
+      <Name>end_miasmadeath</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\LevelEndCards\end_shooterdeath.png">
+      <Name>end_shooterdeath</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\LevelEndCards\end_spikedeath.png">
+      <Name>end_spikedeath</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\LevelEndCards\end_victory.png">
+      <Name>end_victory</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\SketchBackgrounds\sketch_act0.jpg">
+      <Name>sketch_act0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SketchBackgrounds\sketch_act1.jpg">
+      <Name>sketch_act1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SketchBackgrounds\sketch_act2.jpg">
+      <Name>sketch_act2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SketchBackgrounds\sketch_act3.jpg">
+      <Name>sketch_act3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Paintings\painting_gems.png">
+      <Name>painting_gems</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Paintings\painting_gemsgc.png">
+      <Name>painting_gemsgc</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Paintings\painting_highjump.png">
+      <Name>painting_highjump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Paintings\painting_highjumpgc.png">
+      <Name>painting_highjumpgc</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Paintings\painting_hook.png">
+      <Name>painting_hook</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Paintings\painting_hookgc.png">
+      <Name>painting_hookgc</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Paintings\painting_longjump.png">
+      <Name>painting_longjump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Paintings\painting_longjumpgc.png">
+      <Name>painting_longjumpgc</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Paintings\painting_ribbonflip.png">
+      <Name>painting_ribbonflip</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Paintings\painting_ribbonflipgc.png">
+      <Name>painting_ribbonflipgc</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Paintings\painting_ribbonmovement.png">
+      <Name>painting_ribbonmovement</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Paintings\painting_ribbonmovementgc.png">
+      <Name>painting_ribbonmovementgc</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Paintings\painting_seamstressmovement.png">
+      <Name>painting_seamstressmovement</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Paintings\painting_seamstressmovementgc.png">
+      <Name>painting_seamstressmovementgc</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Text\levelInfo.txt">
+      <Name>levelInfo</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Levels\Level3_5.xml">
+      <Name>Level3_5</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\sign_activate.png">
+      <Name>sign_activate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\collect_stone.png">
+      <Name>collect_stone</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\verticalribbon.png">
+      <Name>verticalribbon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Text\creditstext.txt">
+      <Name>creditstext</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

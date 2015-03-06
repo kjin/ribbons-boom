@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="XMLContent.Level">
+    <levelNum>1</levelNum>
+    <gameGrid>30 20</gameGrid>
+    <ribbons>
+      <Item>
+        <path>
+          0  10
+          10 10
+          10 15
+          20 15
+          20 10
+          25 10
+          25 0
+          0  0
+          
+        </path>
+      <start>0</start>
+      <end>35</end>
+      </Item>
+    </ribbons>
+    <ribbonObjects>
+      <Item>
+        <type>hook</type>
+        <position>16</position>
+        <dimensions>1 5</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>box</type>
+        <position>4</position>
+        <dimensions>1 1</dimensions>
+        <rotation>180</rotation>
+      </Item>
+    </ribbonObjects>
+    <environmentObjects>
+      <Item>
+        <type>save</type>
+        <position>23 9</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>ground</type>
+        <position>2 11</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>ground</type>
+        <position>2 12</position>
+        <dimensions>5 5</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>ground</type>
+        <position>6 11</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>miasma</type>
+        <position>10 15</position>
+        <dimensions>10 5</dimensions>
+        <rotation>0</rotation>
+      </Item>
+    </environmentObjects>
+    <seamstress>
+      <position>1 9</position>
+    </seamstress>
+    <exit>
+      <position>20 1</position>
+    </exit>
+  </Asset>
+</XnaContent>

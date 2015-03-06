@@ -1,0 +1,16 @@
+\act
+0
+
+\new
+Ransom Note
+none
+I have taken Prince Beau.
+If you wish to see him again, alive, well good luck.
+Alliteratively yours, Lord Fjord
+
+\new
+Seamstress
+seamspeechneutral
+Damn that Lord Fjord!
+I must rescue the Prince!
+Awaaaaaaaaaaay!

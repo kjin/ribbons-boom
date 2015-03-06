@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="XMLContent.Level">
+    <levelNum>1</levelNum>
+    <gameGrid>30 20</gameGrid>
+    <ribbons>
+      <Item>
+        <path>
+          -10 0
+          7 0
+          7 -4
+          14 -4
+          14 4
+          21 4
+          21 -8
+          30 -8
+          30 -6
+          25 -6
+          25 -2
+          30 -2
+          30 2
+          37 2
+          37 -8
+          42 -8
+          42 4
+          46 4
+          46 -24
+          -10 -24
+        </path>
+        <start>0</start>
+        <end>15</end>
+      </Item>
+    </ribbons>
+    <ribbonObjects>
+      <Item>
+        <type>hook</type>
+        <position>4</position>
+        <dimensions>1 2</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>flipbar</type>
+        <position>10</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+    </ribbonObjects>
+    <environmentObjects>
+      <Item>
+        <type>ground</type>
+        <position>1 1</position>
+        <dimensions>3 3</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>platform</type>
+        <position>17 -4</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>spikes</type>
+        <position>15 1</position>
+        <dimensions>6 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>rotating</type>
+        <position>15 -3</position>
+        <dimensions>3 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>miasma</type>
+        <position>14 -2</position>
+        <dimensions>2 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>miasma</type>
+        <position>15 -2</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>miasma</type>
+        <position>16 -2</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>miasma</type>
+        <position>17 -2</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>miasma</type>
+        <position>18 -2</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>miasma</type>
+        <position>19 -2</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>miasma</type>
+        <position>20 -2</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+    </environmentObjects>
+    <seamstress>
+      <position>0 -1</position>
+    </seamstress>
+    <exit>
+      <position>46 20</position>
+    </exit>
+  </Asset>
+</XnaContent>

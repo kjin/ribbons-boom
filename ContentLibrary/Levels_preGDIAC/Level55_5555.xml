@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<XnaContent>
+  <Asset Type="XMLContent.Level">
+    <levelNum>1</levelNum>
+    <seamstress>
+      <position>10.5 -7.5</position>
+    </seamstress>
+    <ground />
+    <miasma />
+    <gameGrid>20 -10</gameGrid>
+    <ribbons>
+      <Item>
+        <path>4 -5
+8 -5
+8 -1
+4 -1
+</path>
+        <start>0</start>
+        <end>15</end>
+        <loop>true</loop>
+        <color>0</color>
+      </Item>
+      <Item>
+        <path>10 -5
+14 -5
+14 -3
+10 -3
+</path>
+        <start>0</start>
+        <end>9</end>
+        <loop>true</loop>
+        <color>0</color>
+      </Item>
+    </ribbons>
+    <cameras />
+    <ribbonBoxes>
+      <Item>
+        <ribbonID>0</ribbonID>
+        <position>13</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+        <flipped>false</flipped>
+      </Item>
+      <Item>
+        <ribbonID>0</ribbonID>
+        <position>1</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+        <flipped>false</flipped>
+      </Item>
+      <Item>
+        <ribbonID>0</ribbonID>
+        <position>9</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+        <flipped>false</flipped>
+      </Item>
+      <Item>
+        <ribbonID>0</ribbonID>
+        <position>5</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+        <flipped>false</flipped>
+      </Item>
+    </ribbonBoxes>
+    <shooters />
+    <needles />
+    <hooks />
+    <telescopingBlocks />
+    <flipbars />
+    <rotatingPlatforms />
+    <saveRocks />
+    <decorations />
+    <collectables />
+    <gems />
+  </Asset>
+</XnaContent>

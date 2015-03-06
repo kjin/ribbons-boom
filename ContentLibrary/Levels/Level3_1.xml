@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<XnaContent>
+  <Asset Type="XMLContent.Level">
+    <levelNum>3</levelNum>
+    <seamstress>
+      <position>11.5 -4.5</position>
+    </seamstress>
+    <ground>
+      <Item>
+        <position>0 -1</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>0 -2</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>0 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>1 -1</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>2 -1</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>2 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>2 -5</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>3 -1</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>3 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>3 -5</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>3 -6</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>4 -1</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>4 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>4 -5</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>4 -6</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>5 -5</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>5 -6</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>6 -6</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>7 -6</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>8 -9</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>9 -9</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>10 -8</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>10 -9</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>11 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>11 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>12 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>13 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>14 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>15 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>16 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>17 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>17 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>17 -5</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+	  <Item>
+        <position>18 -5</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>19 -1</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>20 -1</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>20 -2</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>20 -3</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+    </ground>
+    <miasma>
+      <Item>
+        <position>12 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>13 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>14 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>15 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+      <Item>
+        <position>16 -4</position>
+        <dimensions>1 1</dimensions>
+      </Item>
+    </miasma>
+    <gameGrid>21 -11</gameGrid>
+    <ribbons>
+      <Item>
+        <path>1 -1
+20 -1
+20 -6
+20 -7
+1 -7
+</path>
+        <start>1</start>
+        <end>15</end>
+        <loop>true</loop>
+        <color>0</color>
+      </Item>
+    </ribbons>
+    <cameras />
+    <ribbonBoxes>
+      <Item>
+        <ribbonID>0</ribbonID>
+        <position>4</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+        <flipped>false</flipped>
+      </Item>
+    </ribbonBoxes>
+    <shooters>
+      <Item>
+        <ribbonID>0</ribbonID>
+        <position>15.5 -1.5</position>
+        <ribbonPosition>14</ribbonPosition>
+        <frequency>15</frequency>
+        <rotation>0</rotation>
+        <flipped>false</flipped>
+      </Item>
+    </shooters>
+    <needles />
+    <hooks>
+      <Item>
+        <ribbonID>0</ribbonID>
+        <ribbonPosition>8</ribbonPosition>
+        <dimensions>1 1</dimensions>
+        <flipped>false</flipped>
+      </Item>
+    </hooks>
+    <telescopingBlocks />
+    <flipbars />
+    <rotatingPlatforms />
+    <saveRocks>
+      <Item>
+        <position> 18 -5.5 </position>
+        <endFlag>true</endFlag>
+      </Item>
+    </saveRocks>
+    <decorations />
+    <collectables>
+      <Item>
+        <position>10 -10</position>
+        <id>0</id>
+      </Item>
+      <Item>
+        <position>20 -4</position>
+        <id>1</id>
+      </Item>
+      <Item>
+        <position>17 -2</position>
+        <id>2</id>
+      </Item>
+    </collectables>
+    <gems />
+  </Asset>
+</XnaContent>

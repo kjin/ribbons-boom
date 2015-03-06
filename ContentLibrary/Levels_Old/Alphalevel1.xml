@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="XMLContent.Level">
+    <levelNum>1</levelNum>
+    <gameGrid>30 20</gameGrid>
+    <ribbons>
+      <Item>
+        <path>
+          5 11
+          5 31
+          22 31
+          22 19
+          28 19
+          28 29
+          36 29
+          36 23
+          44 23
+          44 6
+          28 6
+          28 11
+        </path>
+        <start>0</start>
+        <end>90</end>
+      </Item>
+    </ribbons>
+    <ribbonObjects>
+      <Item>
+        <type>box</type>
+        <position>31</position>
+        <dimensions>1 5</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>flipbar</type>
+        <position>2</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>telescope</type>
+        <position>39</position>
+        <dimensions>1 2</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>box</type>
+        <position>59</position>
+        <dimensions>1 3</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>box</type>
+        <position>79</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>hook</type>
+        <position>84</position>
+        <dimensions>1 2</dimensions>
+        <rotation>0</rotation>
+      </Item>
+    </ribbonObjects>
+    <environmentObjects>
+      <Item>
+        <type>miasma</type>
+        <position>28 28</position>
+        <dimensions>8 2</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>platform</type>
+        <position>23 23</position>
+        <dimensions>4 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>platform</type>
+        <position>39 25.5</position>
+        <dimensions>2 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>platform</type>
+        <position>3 10</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>save</type>
+        <position>3 9</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>miasma</type>
+        <position>5 25</position>
+        <dimensions>6 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>miasma</type>
+        <position>41 20</position>
+        <dimensions>3 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>platform</type>
+        <position>35.5 18</position>
+        <dimensions>5 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>platform</type>
+        <position>31 8</position>
+        <dimensions>4 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>shooter</type>
+        <position>33 9</position>
+        <dimensions>4 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>platform</type>
+        <position>33 10</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>platform</type>
+        <position>28 12</position>
+        <dimensions>2 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>platform</type>
+        <position>7 13</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>platform</type>
+        <position>16 13</position>
+        <dimensions>3 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>platform</type>
+        <position>26 9</position>
+        <dimensions>1 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+      <Item>
+        <type>rotating</type>
+        <position>7 9</position>
+        <dimensions>2 1</dimensions>
+        <rotation>1.57</rotation>
+      </Item>
+      <Item>
+        <type>rotating</type>
+        <position>9 9</position>
+        <dimensions>2 1</dimensions>
+        <rotation>3.14</rotation>
+      </Item>
+      <Item>
+        <type>rotating</type>
+        <position>11 9</position>
+        <dimensions>2 1</dimensions>
+        <rotation>-1.57</rotation>
+      </Item>
+      <Item>
+        <type>rotating</type>
+        <position>13 9</position>
+        <dimensions>2 1</dimensions>
+        <rotation>0</rotation>
+      </Item>
+    </environmentObjects>
+    <seamstress>
+      <position>10 29</position>
+    </seamstress>
+    <exit>
+      <position>46 20</position>
+    </exit>
+  </Asset>
+</XnaContent>
