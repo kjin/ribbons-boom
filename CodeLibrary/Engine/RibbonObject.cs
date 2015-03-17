@@ -387,6 +387,60 @@ namespace CodeLibrary.Engine
 
         }
 
+        public Vector2 PositionToHorizontalOrientation(float pos)
+        {
+            //like positiontoorientation, but guarantees a horizontal orientation 
+            //for when checking for the seamstress's momentum
+            int i = 0;
+            Vector2 closestHorizontalOrientation = new Vector2(0, 0);
+            float closest = float.MaxValue;
+
+            while (pos < 0)
+            {
+                pos += ribbonLength;
+            }
+
+            while (intervals[i] < pos)
+            {
+                pos -= intervals[i];
+
+                if (pos < closest && Math.Abs(orientations[i].X) > 0.1 )
+                {
+                    closestHorizontalOrientation = orientations[i];
+                    closest = pos;
+                }
+
+                i++;
+                while (i >= intervals.Count())
+                {
+                    i = i - intervals.Count();
+                }
+            }
+
+            if (Math.Abs(orientations[i].X) > 0.1)
+            {
+                return orientations[i];
+            }
+            else
+            {
+                i++;
+                while (i >= intervals.Count())
+                {
+                    i = i - intervals.Count();
+                }
+                pos -= intervals[i];
+
+                if (Math.Abs(pos) < closest && Math.Abs(orientations[i].X) > 0.1)
+                {
+                    return orientations[i];
+                }
+                else
+                {
+                    return closestHorizontalOrientation;
+                }
+            }
+        }
+
         public void Move(float dx, float dt)
         {
             //bool contact = false;
@@ -503,7 +557,7 @@ namespace CodeLibrary.Engine
             //Console.WriteLine(seamstressRibbonPosition);
             //Console.WriteLine(v);
 #endif
-            seamstressOrientation = PositionToOrientation(seamstressRibbonPosition);
+            seamstressOrientation = PositionToHorizontalOrientation(seamstressRibbonPosition);
         }
 
         public void SeamstressContactEnded()
