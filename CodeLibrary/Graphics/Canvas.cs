@@ -312,9 +312,9 @@ namespace CodeLibrary.Graphics
             if (flip)
                 effect = SpriteEffects.FlipHorizontally;
             if (coordinateMode == CoordinateMode.ScreenCoordinates)
-                spriteBatch.Draw(texture, position, sourceRectangle, color, rotation, origin, scale * GraphicsConstants.GRAPHICS_SCALE, effect, layerDepth);
+                spriteBatch.Draw(texture, position + offset, sourceRectangle, color, rotation, origin, scale * GraphicsConstants.GRAPHICS_SCALE, effect, layerDepth);
             else
-                spriteBatch.Draw(texture, camera.Transform(position), sourceRectangle, color, rotation - camera.ActualRotation, origin, scale * camera.ActualScale * GraphicsConstants.GRAPHICS_SCALE, effect, layerDepth);
+                spriteBatch.Draw(texture, camera.Transform(position) + offset, sourceRectangle, color, rotation - camera.ActualRotation, origin, scale * camera.ActualScale * GraphicsConstants.GRAPHICS_SCALE, effect, layerDepth);
         }
         #endregion
 

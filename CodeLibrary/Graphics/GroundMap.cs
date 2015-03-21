@@ -75,7 +75,7 @@ namespace CodeLibrary.Graphics
             Color edgeColor = Color.White;
             if (canvas.AssetDictionary.CheckPropertyExists(theme, "groundEdgeColor"))
                 edgeColor = canvas.AssetDictionary.LookupColor(theme, "groundEdgeColor");
-            //effect.Parameters["Texture"].SetValue(edgeTexture);
+            effect.Parameters["Texture"].SetValue(edgeTexture);
             effect.Parameters["Color"].SetValue(edgeColor.ToVector4());
             effect.Parameters["TextureHeight"].SetValue(edgeTexture.Height / GraphicsConstants.PIXELS_PER_UNIT * (GraphicsConstants.SPRITE_SCALE * GraphicsConstants.GRAPHICS_SCALE));
         }

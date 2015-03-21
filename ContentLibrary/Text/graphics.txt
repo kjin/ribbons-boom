@@ -211,6 +211,17 @@ fjord.scale3 = 0.8
 # fjord.yOffset2 = -10
 # fjord.yOffset3 = -10
 
+miasma.groundFillLayers = 2
+miasma.groundFillTexture0 = miasma1
+miasma.groundFillTexture1 = miasma2
+miasma.groundFillMotion0 = (0, 1)
+miasma.groundFillMotion1 = (0, 2)
+miasma.groundFillColor0 = (1, 1, 1, 0.6)
+miasma.groundEdgeTexture = miasma1
+miasma.groundEdgeDimensions = (0.5, 0.1)
+miasma.groundEdgeColor = (1, 1, 1, 0.8)
+miasma.groundEffect = MiasmaEffect
+
 # canvas stuff
 canvas.internalFont = CanvasInternalFont
 

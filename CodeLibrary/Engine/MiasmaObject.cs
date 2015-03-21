@@ -24,9 +24,6 @@ namespace CodeLibrary.Engine
         List<Fixture> fixtures;
         GroundMap groundMap;
         public List<Rectangle> rectangles;
-        LevelGridStore[,] gridModel;
-
-        public LevelGridStore[,] GridModel { get { return gridModel; } set { gridModel = value; } }
 
         /// <summary>
         /// Constructs a new ground object.
@@ -71,13 +68,14 @@ namespace CodeLibrary.Engine
         /// <param name="c">The canvas associated with this game.</param>
         public void Draw(Canvas c)
         {
-            if (groundMap != null)
-                c.DrawMiasmaAnimation(groundMap, gridModel);
+            c.DrawGroundMap2DPortion(groundMap);
+            /*if (groundMap != null)
+                c.DrawMiasmaAnimation(groundMap, gridModel);*/
         }
 
         public void Draw3D(Canvas c, Projections pass)
         {
-            //c.DrawGroundMap3DPortion(groundMap, pass);
+            c.DrawGroundMap3DPortion(groundMap, pass);
         }
     }
 }

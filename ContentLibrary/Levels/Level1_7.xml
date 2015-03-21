@@ -515,7 +515,7 @@
     </ribbons>
     <cameras>
       <Item>
-        <area>29 -13 23 15</area>
+        <area>25 -13 23 15</area>
         <followsPlayer>false</followsPlayer>
         <scale>0.1</scale>
       </Item>

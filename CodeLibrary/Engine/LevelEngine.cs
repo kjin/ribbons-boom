@@ -130,7 +130,6 @@ namespace CodeLibrary.Engine
             seamstressController = new SeamstressForceController(seamstress, inputController);
             world.AddController(seamstressController);
             dispose = false;
-            miasma.GridModel = gridModel;
             levelInfo.CurrentTime = levelInfo.SaveTime;
         }
 
@@ -175,7 +174,6 @@ namespace CodeLibrary.Engine
             world.AddController(ribbonController);
             seamstressController = new SeamstressForceController(seamstress, inputController);
             world.AddController(seamstressController);
-            miasma.GridModel = gridModel;
             levelInfo.CurrentTime = levelInfo.SaveTime;
         }
 
