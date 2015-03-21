@@ -414,60 +414,6 @@ namespace CodeLibrary.Engine
         /// </summary>
         protected void CreateShape(float density)
         {
-            /*if (fixture != null)
-                body.DestroyFixture(fixture);
-            Vertices rectangleVertices = PolygonTools.CreateRectangle(boundingBoxDimensions.X / 2, boundingBoxDimensions.Y / 2);
-            Vertices bodyVertices = new Vertices();
-
-            float x = PhysicsConstants.SEAM_WIDTH/2 - PhysicsConstants.SEAM_EPSILON;
-            float y = 0.5f - PhysicsConstants.SEAM_EPSILON;
-            hitbox = new List<Vector2>();
-
-            bodyVertices.Add(new Vector2(-x,-y));
-            hitbox.Add(new Vector2(-x, -y));
-
-            bodyVertices.Add(new Vector2(-x + PhysicsConstants.SEAM_SLANT, y - PhysicsConstants.SEAM_SLANT));
-            hitbox.Add(new Vector2(-x + PhysicsConstants.SEAM_SLANT, y - PhysicsConstants.SEAM_SLANT));
-
-            bodyVertices.Add(new Vector2(0, y));
-            hitbox.Add(new Vector2(0, y));
-
-            bodyVertices.Add(new Vector2(x - PhysicsConstants.SEAM_SLANT, y - PhysicsConstants.SEAM_SLANT));
-            hitbox.Add(new Vector2(x - PhysicsConstants.SEAM_SLANT, y - PhysicsConstants.SEAM_SLANT));
-
-            /*bodyVertices.Add(new Vector2(-x, y - PhysicsConstants.SEAM_SLANT2));
-            hitbox.Add(new Vector2(-x, y - PhysicsConstants.SEAM_SLANT2));
-
-            bodyVertices.Add(new Vector2(-x + PhysicsConstants.SEAM_SLANT2, y));
-            hitbox.Add(new Vector2(-x + PhysicsConstants.SEAM_SLANT2, y));
-
-            bodyVertices.Add(new Vector2(x - PhysicsConstants.SEAM_SLANT2, y));
-            hitbox.Add(new Vector2(x - PhysicsConstants.SEAM_SLANT2, y));
-
-            bodyVertices.Add(new Vector2(x, y - PhysicsConstants.SEAM_SLANT2));
-            hitbox.Add(new Vector2(x, y - PhysicsConstants.SEAM_SLANT2));
-
-            bodyVertices.Add(new Vector2(-x, y));
-            hitbox.Add(new Vector2(-x, y));
-
-            bodyVertices.Add(new Vector2(x, y));
-            hitbox.Add(new Vector2(x, y));
-
-            bodyVertices.Add(new Vector2(x, -y));
-            hitbox.Add(new Vector2(x, -y));
-             
-            bodyVertices.Add(new Vector2(-dimension.X / 4, -dimension.Y / 2 + PhysicsConstants.SEAM_EPSILON));
-            bodyVertices.Add(new Vector2(-dimension.X / 4, dimension.Y / 4 - PhysicsConstants.SEAM_EPSILON / 2));
-            bodyVertices.Add(new Vector2(0, dimension.Y / 2 - PhysicsConstants.SEAM_EPSILON));
-            bodyVertices.Add(new Vector2(dimension.X / 4, dimension.Y / 4 - PhysicsConstants.SEAM_EPSILON));
-            bodyVertices.Add(new Vector2(dimension.X / 4, -dimension.Y / 2 + PhysicsConstants.SEAM_EPSILON));
-
-            //PolygonShape rectangleShape = new PolygonShape(rectangleVertices, density);
-            PolygonShape polygonShape = new PolygonShape(bodyVertices, density);
-            fixture = body.CreateFixture(polygonShape, this);
-            fixture.CollisionCategories = PhysicsConstants.SEAMSTRESS_CATEGORY;
-            fixture.UserData = this;*/
-
             if (fixture != null)
                 body.DestroyFixture(fixture);
             Vertices rectangleVertices = PolygonTools.CreateRectangle(boundingBoxDimensions.X / 2, boundingBoxDimensions.Y / 2);
@@ -492,14 +438,6 @@ namespace CodeLibrary.Engine
             bodyVertices.Add(new Vector2(x, -y));
             hitbox.Add(new Vector2(x, -y));
 
-            /*
-            bodyVertices.Add(new Vector2(-dimension.X / 4, -dimension.Y / 2 + PhysicsConstants.SEAM_EPSILON));
-            bodyVertices.Add(new Vector2(-dimension.X / 4, dimension.Y / 4 - PhysicsConstants.SEAM_EPSILON / 2));
-            bodyVertices.Add(new Vector2(0, dimension.Y / 2 - PhysicsConstants.SEAM_EPSILON));
-            bodyVertices.Add(new Vector2(dimension.X / 4, dimension.Y / 4 - PhysicsConstants.SEAM_EPSILON));
-            bodyVertices.Add(new Vector2(dimension.X / 4, -dimension.Y / 2 + PhysicsConstants.SEAM_EPSILON));*/
-
-            //PolygonShape rectangleShape = new PolygonShape(rectangleVertices, density);
             PolygonShape polygonShape = new PolygonShape(bodyVertices, density);
             fixture = body.CreateFixture(polygonShape, this);
             fixture.CollisionCategories = PhysicsConstants.SEAMSTRESS_CATEGORY;
