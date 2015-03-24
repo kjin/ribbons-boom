@@ -1,5 +1,5 @@
-level
-Level0_0
+cutscene
+Script0_1
 
 level
 Level0_1

@@ -75,7 +75,7 @@ namespace CodeLibrary.Context
 
             // load background
             ActAssets actAssets = new ActAssets(Canvas, ActNumber);
-            //backgrounds = actAssets.Background;
+            backgrounds = ParallaxBackgroundSet.Build(Canvas, Vector2.Zero, actAssets.Theme);
             this.BackgroundColor = Canvas.AssetDictionary.LookupColor("act" + ActNumber, "color");
         }
 
