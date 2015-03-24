@@ -69,11 +69,6 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
     </Compile>
-    <Compile Include="Levels\Level0_10.xml">
-      <Name>Level0_10</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-    </Compile>
     <Compile Include="Levels\Level0_2.xml">
       <Name>Level0_2</Name>
       <Importer>XmlImporter</Importer>
@@ -147,11 +142,6 @@
     </Compile>
     <Compile Include="Levels\Level1_7.xml">
       <Name>Level1_7</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-    </Compile>
-    <Compile Include="Levels\Level1_8.xml">
-      <Name>Level1_8</Name>
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
     </Compile>
