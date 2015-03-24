@@ -351,7 +351,7 @@
         <dimensions>1 1</dimensions>
       </Item>
       <Item>
-        <position>18 -11</position>
+        <position>18 -10</position>
         <dimensions>1 1</dimensions>
       </Item>
       <Item>
@@ -387,7 +387,7 @@
         <dimensions>1 1</dimensions>
       </Item>
       <Item>
-        <position>19 -11</position>
+        <position>19 -10</position>
         <dimensions>1 1</dimensions>
       </Item>
       <Item>
@@ -423,11 +423,11 @@
         <dimensions>1 1</dimensions>
       </Item>
       <Item>
-        <position>20 -11</position>
+        <position>20 -10</position>
         <dimensions>1 1</dimensions>
       </Item>
       <Item>
-        <position>20 -12</position>
+        <position>20 -11</position>
         <dimensions>1 1</dimensions>
       </Item>
       <Item>
@@ -777,7 +777,7 @@
         <color>0</color>
       </Item>
       <Item>
-        <position>19 -12</position>
+        <position>19 -11</position>
         <color>2</color>
       </Item>
     </gems>
