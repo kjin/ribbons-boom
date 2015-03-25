@@ -1099,9 +1099,7 @@
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="XACT\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Compile Include="Textures\file_back.png">
       <Name>file_back</Name>
@@ -3432,7 +3430,7 @@
       <Name>Script3_1</Name>
       <Importer>TextImporter</Importer>
       <Processor>TextProcessor</Processor>
-	</Compile>
+    </Compile>
     <Compile Include="Textures\LevelPreviews\Level0_1.png">
       <Name>Level0_1</Name>
       <Importer>TextureImporter</Importer>
@@ -3601,6 +3599,13 @@
       <Name>preview_grid</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="XACT\Music.xap">
+      <Name>Music</Name>
+      <Importer>XactImporter</Importer>
+      <Processor>XactProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
