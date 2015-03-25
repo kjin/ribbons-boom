@@ -353,7 +353,7 @@ namespace CodeLibrary.Engine
                     }
                     else
                     {
-                        if (isWalking)
+                        if (isWalking && !win)
                         {
                             seamstressSprites.Run.TicksPerFrame = 3;
                             c.DrawSprite(seamstressSprites.Run, Color.White, body.Position, 0, 1, facingLeft);
