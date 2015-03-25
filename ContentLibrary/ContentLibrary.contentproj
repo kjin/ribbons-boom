@@ -3475,6 +3475,23 @@
       <Processor>TextProcessor</Processor>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Text\Script1_1.txt">
+      <Name>Script1_1</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+    <Compile Include="Text\Script2_1.txt">
+      <Name>Script2_1</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+    <Compile Include="Text\Script3_1.txt">
+      <Name>Script3_1</Name>
+      <Importer>TextImporter</Importer>
+      <Processor>TextProcessor</Processor>
+    </Compile>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -11,7 +11,7 @@ Great Ribbon-tastophe! Somebody, help!
 Seamstress
 seamspeechneutral
 \show
-What is it, Magistrate?
+What is it?
 
 \new
 Magistrate Thimbleton
@@ -22,9 +22,9 @@ Seamstress, I've been looking everywhere for you!
 Magistrate Thimbleton
 whitespeech
 It's Prince Beau, I can't find him anywhere!
-We can't very well have the coronation without him!
+We can't have the coronation without him!
 
 \new
 Seamstress
 seamspeechneutral
-I'll go check his chambers.
+I'll go look for him.

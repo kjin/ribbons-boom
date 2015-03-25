@@ -1,0 +1,22 @@
+\act
+1
+
+\new
+Seamstress
+seamspeechneutral
+\show
+Another note?
+
+\new
+[Note]
+seamspeechneutral
+"Seriously, you'll never find him."
+"No one has ever made it through the mysterious ribbon forest."
+"Just give up."
+"Sincerely, Lord Fjord"
+"P.S. You should give up."
+
+\new
+Seamstress
+seamspeechneutral
+He must be in the ribbon forest.

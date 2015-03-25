@@ -1,11 +1,11 @@
-cutscene
-Script0_1
-
 level
 Level0_1
 
 level
 Level0_2
+
+cutscene
+Script0_1
 
 level
 Level0_3
@@ -28,6 +28,9 @@ Level0_8
 level
 Level0_9
 
+cutscene
+Script0_2
+
 level
 Level1_1
 
@@ -49,6 +52,9 @@ Level1_6
 level
 Level1_7
 
+cutscene
+Script1_1
+
 level
 Level2_1
 
@@ -64,6 +70,9 @@ Level2_4
 level
 Level2_5
 
+cutscene
+Script2_1
+
 level
 Level3_1
 
@@ -75,6 +84,9 @@ Level3_3
 
 level
 Level3_4
+
+cutscene
+Script3_1
 
 level
 Level3_5
