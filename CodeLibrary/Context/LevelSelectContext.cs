@@ -23,6 +23,8 @@ namespace CodeLibrary.Context
         string activeLevelName;
 
         Texture2D[] backgrounds;
+        Texture2D prevArrow;
+        Texture2D nextArrow;
         bool songPlaying;
 
         SpriteFont titleFont;
@@ -92,6 +94,8 @@ namespace CodeLibrary.Context
             collectable = Canvas.Assets.GetTexture("Collectables/collect0");
             bowStone = Canvas.Assets.GetTexture("collect_stone");
             ribbon = Canvas.Assets.GetTexture("verticalribbon");
+            prevArrow = Canvas.Assets.GetTexture("prevArrow");
+            nextArrow = Canvas.Assets.GetTexture("nextArrow");
 
             activeLevelInfo = FileManager.ActiveFile.GetLevelInfo(activeWorld, activeLevel);
             activeLevelName = FileManager.GetLevelTitle(activeWorld, activeLevel);
@@ -166,6 +170,14 @@ namespace CodeLibrary.Context
             int millisecs = activeLevelInfo.CompletionTime - mins * 1000 * 60 - secs * 1000;
             Canvas.DrawString(String.Format("{0:D2}:{1:D2}:{2:D3}", mins, secs, millisecs), subtitleFont, Color.White, new Vector2(860, 400) + offset2, Anchor.TopLeft);
             Canvas.DrawString("BEST TIME", infoFont, Color.White, new Vector2(840, 400) + offset2, Anchor.TopRight);
+            if (activeWorld > 0)
+            {
+                Canvas.DrawTexture(prevArrow, Color.White, new Vector2(0, 720) + offset2, Anchor.BottomLeft, 0, 0.4f);
+            }
+            if (activeWorld < options.Count - 1)
+            {
+                Canvas.DrawTexture(nextArrow, Color.White, new Vector2(1280, 720) + offset2, Anchor.BottomRight, 0, 0.4f);
+            }
         }
 
         public override void PlayAudio(GameTime gameTime)

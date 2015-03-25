@@ -55,7 +55,6 @@ namespace CodeLibrary.Context
             //options.Add(new TextureOption(Canvas.Assets.GetTexture("text_loadgame")));
             options.Add(new TextOption("Quick Play"));
             options.Add(new TextOption("File Select"));
-            options.Add(new TextOption("Options"));
             options.Add(new TextOption("Exit"));
             //options.Add(new TextureOption(Canvas.Assets.GetTexture("text_options")));
             //options.Add(new TextureOption(Canvas.Assets.GetTexture("text_exit")));
@@ -99,9 +98,6 @@ namespace CodeLibrary.Context
                                 NextContext = new FileSelectContext(this);
                                 break;
                             case 2:
-                                NextContext = new OptionsContext(this);
-                                break;
-                            case 3:
                                 Exit = true;
                                 break;
                         }
