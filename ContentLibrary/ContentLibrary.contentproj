@@ -3418,7 +3418,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Text\Script1_1.txt">
       <Name>Script1_1</Name>
       <Importer>TextImporter</Importer>
@@ -3433,7 +3432,7 @@
       <Name>Script3_1</Name>
       <Importer>TextImporter</Importer>
       <Processor>TextProcessor</Processor>
-=======
+	</Compile>
     <Compile Include="Textures\LevelPreviews\Level0_1.png">
       <Name>Level0_1</Name>
       <Importer>TextureImporter</Importer>
@@ -3563,7 +3562,6 @@
       <Name>Level3_5</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
->>>>>>> origin/master
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
