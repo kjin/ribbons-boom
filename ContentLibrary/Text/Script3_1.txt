@@ -1,5 +1,5 @@
 \act
-2
+3
 
 \new
 Seamstress
@@ -53,7 +53,6 @@ Also... special thanks to Walker White, John Oliver, and GDIAC for their help.
 \new
 Seamstress
 seamspeechneutral
-And thank to YOU for playing our game!!!
+And thank YOU for playing our game!!!
 Now vote for our project for BOOM 2015.
-Feel free to ask the presenters questions if you have any.
-And don't feel bad if you can't beat this last level; we know that there are problems with it.
+Hope you enjoy this bonus level!

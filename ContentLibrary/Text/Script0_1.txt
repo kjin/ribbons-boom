@@ -16,11 +16,6 @@ What is it?
 \new
 Magistrate Thimbleton
 whitespeech
-Seamstress, I've been looking everywhere for you!
-
-\new
-Magistrate Thimbleton
-whitespeech
 It's Prince Beau, I can't find him anywhere!
 We can't have the coronation without him!
 

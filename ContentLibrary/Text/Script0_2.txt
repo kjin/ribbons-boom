@@ -5,7 +5,7 @@
 Seamstress
 seamspeechneutral
 \show
-What's this?
+A note?
 
 \new
 [Note]

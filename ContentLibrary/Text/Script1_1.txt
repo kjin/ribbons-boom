@@ -8,9 +8,9 @@ seamspeechneutral
 Prince Beau?
 
 \new
-Prince Beau
+Lord Fjord
 beauspeechmoustache
-I'M NOT PRINCE BEAU I'M LORD FJORD.
+I'm not Prince Beau, I'm Lord Fjord.
 
 \new
 Seamstress
@@ -18,11 +18,11 @@ seamspeechneutral
 Oh.
 
 \new
-Prince Beau
+Lord Fjord
 beauspeechmoustache
-AND YOU SHOULD PROBABLY GIVE UP ON PRINCE BEAU.
-I'VE HIDDEN HIM IN THE RIBBON FOREST, AND ONLY PEOPLE WITH MOUSTACHES CAN ENTER.
-SEE YOU NEVER.
+And you should probably give up on Prince Beau.
+I've hidden him in the ribbon forest, where only people with moustaches can enter.
+See you never.
 
 \new
 Seamstress
