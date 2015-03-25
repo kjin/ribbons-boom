@@ -1,0 +1,59 @@
+\act
+2
+
+\new
+Seamstress
+seamspeechneutral
+\show
+Finally. God, what an annoying level.
+
+\new
+Magistrate Thimbleton
+whitespeech
+\show
+If you want to get to Prince Beau you'll have to get through me!
+
+\new
+Seamstress
+seamspeechneutral
+...
+
+\new
+Magistrate Thimbleton
+whitespeech
+Ow.
+
+\new
+Prince Beau
+beauspeech1
+Wow... You saved me...
+I think this whole experience has made me ready to be king...
+
+\new
+Seamstress
+seamspeechneutral
+That's great, Beau. But this wouldn't have been possible without the help of others.
+
+\new
+Prince Beau
+beauspeech1
+That's right... Daniel Carpenter, Kelvin Jin, Marisa Gianfortune all put in time to create this game.
+
+\new
+Seamstress
+seamspeechneutral
+Don't forget Kevin Boyle, William Milne, and Evan Long, 
+who've since graduated from Cornell and weren't able to be here today.
+
+\new
+Prince Beau
+beauspeech1
+Also... special thanks to Walker White, John Oliver, and GDIAC for their help.
+
+\new
+Seamstress
+seamspeechneutral
+And thank to YOU for playing our game!!!
+Now vote for our project for BOOM 2015.
+Feel free to ask the presenters questions if you have any.
+And don't feel bad if you can't beat this last level; we know that there are problems with it.

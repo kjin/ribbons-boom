@@ -111,12 +111,12 @@ namespace CodeLibrary.Context
             Rectangle main = new Rectangle(Canvas.Camera.Width / 10, Canvas.Camera.Height * 7 / 10, Canvas.Camera.Width * 8 / 10, Canvas.Camera.Height * 2 / 10);
             Rectangle name = new Rectangle(Canvas.Camera.Width / 10, Canvas.Camera.Height * 65 / 100, Canvas.Camera.Width * 2 / 10, Canvas.Camera.Height * 1 / 20);
             // draw text box
-            Canvas.DrawRectangle(Color.Blue, Color.BlanchedAlmond, 4, main, false);
-            Canvas.DrawRectangle(Color.Blue, Color.BlanchedAlmond, 4, name, false);
+            Canvas.DrawRectangle(new Color(194, 33, 33), new Color(127, 23, 23), 4, main, false);
+            Canvas.DrawRectangle(new Color(194, 33, 33), new Color(127, 23, 23), 4, name, false);
             // draw text
-            Canvas.DrawString(actor[lineNumber], spriteFont, Color.Black, new Vector2(name.Left + TEXT_X_OFFSET, name.Top + 4), 0, 1);
-            Canvas.DrawString(speech[lineNumber], spriteFont, Color.Black, new Vector2(main.Left + TEXT_X_OFFSET,main.Top + TEXT_X_OFFSET), 0, 1);
-            Canvas.DrawString("[ Hit Enter to Continue... ]", Color.Black, new Vector2(main.Right, main.Bottom), Anchor.BottomRight, 0, 1);
+            Canvas.DrawString(actor[lineNumber], spriteFont, Color.White, new Vector2(name.Left + TEXT_X_OFFSET, name.Top + 4), 0, 1);
+            Canvas.DrawString(speech[lineNumber], spriteFont, Color.White, new Vector2(main.Left + TEXT_X_OFFSET,main.Top + TEXT_X_OFFSET), 0, 1);
+            Canvas.DrawString("[ Hit Enter to Continue... ]", Color.White, new Vector2(main.Right, main.Bottom), Anchor.BottomRight, 0, 1);
             Canvas.DrawString("[ Hit Any Key to Skip... ]", Color.Black, new Vector2(main.Right, main.Bottom + TEXT_Y_OFFSET), Anchor.BottomRight, 0, 1);
             // draw speaker portrait
             if (portraitId[lineNumber] != "none")

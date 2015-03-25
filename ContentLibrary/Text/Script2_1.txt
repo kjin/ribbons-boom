@@ -1,0 +1,71 @@
+\act
+2
+
+\new
+Seamstress
+seamspeechneutral
+\show
+Prince Beau! Is that you?
+
+\new
+Prince Beau
+beauspeech1
+\show
+Oh... I didn't think you'd find me...
+
+\new
+Seamstress
+seamspeechneutral
+Where's Lord Fjord?
+
+\new
+Prince Beau
+beauspeech1
+He doesn't exist... I made up those notes...
+
+\new
+Seamstress
+seamspeechneutral
+Why?
+
+\new
+Prince Beau
+beauspeech1
+I wanted to run away....
+I wasn't ready to be coronated... I didn't think I would be a good king...
+
+\new
+Seamstress
+seamspeechneutral
+Why?
+
+\new
+Prince Beau
+beauspeech1
+You're right... I should come back, I guess...
+
+\new
+Magistrate Thimbleton
+whitespeech
+Seamstress, you've ruined everything!
+
+\new
+Seamstress
+seamspeechneutral
+Why?
+
+\new
+Magistrate Thimbleton
+whitespeech
+With Prince Beau gone, I would have been next in line to the throne!
+Looks like I have to take care of things myself!
+
+\new
+Prince Beau
+beauspeech1
+Oh no... I'm being kidnapped...
+
+\new
+Seamstress
+seamspeechneutral
+Ugh.
