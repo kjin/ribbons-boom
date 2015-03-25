@@ -21,7 +21,7 @@ namespace CodeLibrary.Context
             : base()
         {
             border = canvas.Assets.GetTexture("cardshell");
-            texture = canvas.Assets.GetTexture("FullBackgrounds/act" + act + "_fullimage");
+            texture = canvas.Assets.GetTexture("LevelPreviews/Level" + act + "_" + level);
             //sourceRectangle = new Rectangle((int)((texture.Width - (int)size.X) * levelPortion), (int)((texture.Height - (int)size.Y) *  (1 - levelPortion)), (int)size.X, (int)size.Y);
             sourceRectangle = new Rectangle(0, 0, texture.Width, (int)(texture.Width * 150f/225f));
             this.level = level;
