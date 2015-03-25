@@ -3563,6 +3563,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Textures\beauspeechmoustache.png">
+      <Name>beauspeechmoustache</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\seamspeechmoustache.png">
+      <Name>seamspeechmoustache</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Textures\nextArrow.png">
       <Name>nextArrow</Name>
       <Importer>TextureImporter</Importer>

@@ -21,7 +21,7 @@ Where's Lord Fjord?
 \new
 Prince Beau
 beauspeech1
-He doesn't exist... I made up those notes...
+He doesn't exist... I used a disguise...
 
 \new
 Seamstress

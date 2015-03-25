@@ -5,18 +5,31 @@
 Seamstress
 seamspeechneutral
 \show
-Another note?
+Prince Beau?
 
 \new
-[Note]
-seamspeechneutral
-"Seriously, you'll never find him."
-"No one has ever made it through the mysterious ribbon forest."
-"Just give up."
-"Sincerely, Lord Fjord"
-"P.S. You should give up."
+Prince Beau
+beauspeechmoustache
+I'M NOT PRINCE BEAU I'M LORD FJORD.
 
 \new
 Seamstress
 seamspeechneutral
-He must be in the ribbon forest.
+Oh.
+
+\new
+Prince Beau
+beauspeechmoustache
+AND YOU SHOULD PROBABLY GIVE UP ON PRINCE BEAU.
+I'VE HIDDEN HIM IN THE RIBBON FOREST, AND ONLY PEOPLE WITH MOUSTACHES CAN ENTER.
+SEE YOU NEVER.
+
+\new
+Seamstress
+seamspeechneutral
+He got away.
+
+\new
+Seamstress
+seamspeechmoustache
+Good thing I came prepared.
