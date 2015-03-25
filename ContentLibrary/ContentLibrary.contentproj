@@ -3432,7 +3432,7 @@
       <Name>Script3_1</Name>
       <Importer>TextImporter</Importer>
       <Processor>TextProcessor</Processor>
-	</Compile>
+    </Compile>
     <Compile Include="Textures\LevelPreviews\Level0_1.png">
       <Name>Level0_1</Name>
       <Importer>TextureImporter</Importer>
@@ -3560,6 +3560,18 @@
     </Compile>
     <Compile Include="Textures\LevelPreviews\Level3_5.png">
       <Name>Level3_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\beauspeechmoustache.png">
+      <Name>beauspeechmoustache</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\seamspeechmoustache.png">
+      <Name>seamspeechmoustache</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
